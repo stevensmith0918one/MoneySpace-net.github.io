@@ -1,0 +1,446 @@
+@media (max-width: $maxMediaMD) {
+  .container {
+    width: $containerMD;
+  }
+
+  header {
+    .left {
+      padding-top: 0px;
+    }
+
+    .wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .menuWrapper {
+      padding-top: 0px;
+    }
+  }
+
+  .mainBanner {
+    padding-top: 100px;
+    padding-bottom: 0px;
+
+    .left {
+      padding-top: 30px;
+      padding-left: 0px;
+      width: 450px;
+    }
+
+    .bannerInfo {
+      &+.partnersList {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .bannerInfo {
+    .slogan {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+
+      &+[class*="btn"] {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .createLinkAnimation {
+    @include transform(scale(0.75));
+    @include transform-origin(50% 0%);
+  }
+
+  .getLinkWrapper {
+    &::before {
+      right: 80px;
+    }
+
+    &::after {
+      right: 150px;
+    }
+  }
+
+  .getLinkBlock {
+    width: 366px;
+    height: 80px;
+
+    .field {
+      padding: 15px 20px;
+    }
+
+    .data {
+      font-size: 22px;
+      line-height: 28px;
+
+      &::after {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .mainAbout {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .right {
+      margin-left: 100px;
+      width: auto;
+    }
+  }
+
+  .advantages {
+    padding-bottom: 70px;
+  }
+
+  .advantagesList {
+    .item {
+      width: 25%;
+    }
+  }
+
+  .advantagesItem {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 30px;
+
+    .img {
+      &+.title {
+        margin-top: 25px;
+      }
+    }
+
+    .title,
+    p {
+      padding-left: 0px;
+    }
+  }
+
+  .mainInfo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .wrapper {
+      padding-left: 0px;
+      width: 450px;
+    }
+
+    .apiImg {
+      top: 210px;
+      @include transform(scale(0.7));
+      @include transform-origin(100% 0%);
+    }
+
+    &::before {
+      top: 100px;
+      width: 450px;
+      height: calc(100% - 200px);
+    }
+
+    &::after {
+      top: 190px;
+      width: 360px;
+      height: calc(100% - 380px);
+    }
+  }
+
+  .joinSection {
+    &.main {
+      padding-bottom: 70px;
+    }
+  }
+
+  .joinBlock {
+    padding: 50px;
+
+    .img {
+      &+.info {
+        margin-left: 50px !important;
+      }
+
+      &.dotsTop,
+      &.dotsBottom {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .title {
+      &.lg {
+        font-size: 68px;
+      }
+
+      &.sm {
+        font-size: 40px;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .wrapper {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  // CONTACTS 
+
+  .contactsSection {
+    &+footer {
+      margin-top: 0px;
+    }
+  }
+
+  .contactBlock {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .mapWrapper {
+    right: -30px;
+    margin-left: -30px;
+
+    .mapBlock {
+      width: 520px;
+      height: 425px;
+    }
+
+    .locationBlock {
+      left: -75px;
+      bottom: -175px;
+    }
+  }
+
+  // PRICING 
+
+  .pricigPageHeader {
+    height: auto;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .pricingBanner {
+    padding-top: 70px;
+    padding-bottom: 287px;
+  }
+
+  .pricingPageContent {
+    .calculator {
+      &+.pricingInfo {
+        margin-top: 65px;
+      }
+    }
+
+    .joinSection {
+      margin-top: 81px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .calculator {
+    .calcForm {
+      width: calc(100% - 450px);
+    }
+
+    .calcInfo {
+      width: 450px;
+    }
+  }
+
+  .calcForm {
+    padding: 60px 50px;
+    height: auto;
+  }
+
+  .calcInfo {
+    padding: 60px 50px;
+    height: auto;
+
+    .info {
+      &+.note {
+        margin-top: 24px;
+      }
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  // LINKS
+
+  .linksBanner {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .stepsList {
+    .item {
+      height: auto;
+    }
+  }
+
+  .stepItem {
+    padding: 30px;
+
+    .num {
+      &+.img {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .linkSectionBuy {
+    padding-top: 140px;
+    padding-bottom: 50px;
+
+    .wrapper {
+      padding-left: 0px;
+    }
+
+    .left {
+      width: 540px;
+
+      &+.right {
+        margin-left: 0px;
+      }
+    }
+
+    .right {
+      padding-top: 10px;
+    }
+
+    .linkInfo {
+      &+.linkDescr {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .linkFormBuyWrapper {
+    @include transform(scale(0.85));
+    @include transform-origin(0% 0%);
+  }
+
+  .linkDescr {
+    max-width: 100%;
+
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .linkSectionMerch {
+    padding-top: 140px;
+    padding-bottom: 50px;
+
+    .left {
+      padding-top: 20px;
+      width: auto;
+
+      &+.right {
+        margin-left: 0px;
+      }
+    }
+
+    .right {
+      width: 540px;
+    }
+
+    .linkInfo {
+      &+.linkDescr {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .linkMerchFormWrapper {
+    @include transform(scale(0.85));
+    @include transform-origin(50% 0%);
+  }
+
+  .joinSection {
+    &.links {
+      padding-bottom: 70px;
+    }
+  }
+
+  // Prohibited businesses
+
+  .businessBlock {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  // ABOUT
+
+  .aboutPageHeader {
+    height: auto;
+  }
+
+  .aboutBanner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  .aboutInfo {
+    padding-bottom: 70px;
+
+    .left {
+      width: 460px;
+      padding-top: 60px;
+    }
+
+    .quoteBlock {
+      top: -60px;
+      margin-bottom: -60px;
+    }
+  }
+
+  .quoteBlock {
+    width: 430px;
+    height: auto;
+
+    p {
+      padding-left: 40px;
+      padding-top: 175px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+    }
+
+    &::before {
+      top: 80px;
+      left: 45px;
+    }
+  }
+
+  .joinSection{
+    &.about {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  // PAYMENT
+
+  .paymentSection {
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+}

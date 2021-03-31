@@ -1,0 +1,132 @@
+header {
+  position: relative;
+  padding-top: 13px;
+  z-index: 2;
+
+  .wrapper {
+    padding-left: 40px;
+    padding-right: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logoWrapper {
+    &+.menuWrapper {
+      margin-left: 70px;
+    }
+  }
+
+  .menuWrapper {
+    padding-top: 5px;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .langBlock {
+    &+[class*="btn"] {
+      margin-left: 26px;
+    }
+  }
+}
+
+.menuList {
+  display: flex;
+
+  li {
+    a {
+      font-family: $font3;
+      @include font(15px, 19px, $color4, null, null);
+      @include transition(color 0.3s);
+
+      &:hover {
+        color: $color3-1;
+      }
+    }
+
+    &.active {
+      a {
+        color: $color3-1;
+      }
+    }
+
+    &+li {
+      margin-left: 40px;
+    }
+  }
+
+  &.light {
+    li {
+      a {
+        color: $color1;
+
+        &:hover {
+          color: $color3-1;
+        }
+      }
+    }
+  }
+}
+
+.loginSm {
+  display: none;
+}
+
+.openMenuBtn {
+  display: none;
+  width: 21px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 3px;
+    background-color: $color3;
+    @include border-radius(1px);
+    @include transition(background-color 0.3s);
+
+    &+span {
+      margin-top: 4px;
+    }
+  }
+
+  &:hover {
+    span {
+      background-color: $color3-3;
+    }
+  }
+
+  &.light {
+    span {
+      background-color: $color1;
+    }
+
+    &:hover {
+      span {
+        background-color: $color3-3;
+      }
+    }
+  }
+}
+
+.menuTitleSm {
+  display: none;
+  font-family: $font2;
+  @include font(18px, 23px, $color1, bold, null);
+}
+
+.closeMenuBtn {
+  display: none;
+  padding: 12px;
+  font-size: 16px;
+  color: $color1;
+  cursor: pointer;
+}

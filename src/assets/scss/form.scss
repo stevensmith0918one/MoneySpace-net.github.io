@@ -1,0 +1,249 @@
+[class*="inBlock"] {
+  &[class*="Type1"] {
+    label,
+    .label {
+      display: block;
+      font-family: $font3;
+      @include font(16px, 20px, $color7, null, -0.14px);
+
+      span {
+        display: block;
+        padding-top: 2px;
+        font-size: 14px;
+        color: $color7;
+      }
+
+      &.lg {
+        font-size: 18px;
+        color: $color2-3;
+      }
+
+      &+.inWrap {
+        margin-top: 12px;
+      }
+    }
+
+    input,
+    .input {
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 44px;
+      font-family: $font3;
+      @include font(18px, 42px, $color2-3, null, -0.16px);
+      background-color: $color8;
+      border: 1px solid $color9;
+      @include border-radius(6px);
+
+      span {
+        color: $color2-3;
+      }
+
+      &::after {
+        font-family: $font3;
+        @include font(18px, 42px, $color2-3, null, -0.16px);
+      }
+
+      &.terms {
+        font-size: 14px;
+        color: $color50;
+      }
+    }
+
+    .inWrap {
+      &.comb {
+        display: flex;
+
+        input,
+        .input {
+          width: 50%;
+
+          &:first-child {
+            @include border-radius(6px 0px 0px 6px);
+          }
+
+          &:last-child {
+            @include border-radius(0px 6px 6px 0px);
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+
+  &[class*="Type2"] {
+    label {
+      display: block;
+      font-family: $font3;
+      @include font(14px, 27px, $color27, null, 0.8px);
+      text-transform: uppercase;
+
+      &+.inWrap {
+        margin-top: 14px;
+      }
+    }
+
+    input {
+      padding-left: 18px;
+      padding-right: 18px;
+      height: 61px;
+      font-family: $font3;
+      @include font(18px, 59px, $color2-3, null, -0.16px);
+      background-color: $color28;
+      border: 1px solid $color29;
+      @include border-radius(8px);
+    }
+  }
+
+  &[class*="Type3"] {
+    label {
+      display: block;
+      font-family: $font3;
+      @include font(18px, 23px, $color1, null, -0.2px);
+
+      span {
+        display: block;
+        padding: 4px 0px 3px;
+        @include font(14px, 1, $color1, null, -0.1px);
+        opacity: 0.61;
+      }
+
+      &+.inWrap {
+        margin-top: 12px;
+      }
+    }
+
+    input {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 44px;
+      font-family: $font3;
+      @include font(16px, 42px, $color1, null, -0.1px);
+      background-color: $color40;
+      border: 1px solid $color41;
+      @include border-radius(6px);
+
+      &.terms {
+        font-size: 14px;
+        color: $color42;
+      }
+    }
+  }
+}
+
+.checkBtn {
+  position: relative;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    @include appearance(none);
+
+    &:checked {
+      &+label {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  label {
+    position: relative;
+    display: inline-block;
+    padding-left: 35px;
+    font-family: $font3;
+    @include font(16px, 24px, $color7, null, -0.14px);
+    @include transition(color 0.3s);
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 24px;
+      height: 24px;
+      background-color: $color10;
+      border: 1px solid $color11;
+      @include border-radius(3px);
+    }
+
+    &::after {
+      content: '\e900';
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 24px;
+      height: 24px;
+      font-family: $font5;
+      @include font(20px, 24px, $color3, null, null);
+      text-align: center;
+      opacity: 0;
+      @include transition(opacity 0.3s);
+    }
+
+    &:hover {
+      color: $color3;
+    }
+  }
+}
+
+.radioBtn {
+  position: relative;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    @include appearance(none);
+
+    &:checked {
+      &+label {
+        color: $color1;
+        background-color: $color3;
+        @include box-shadow(0px 9px 20px -1px $color2-a1);
+        border: 1px solid $color3;
+      }
+    }
+  }
+
+  label {
+    display: inline-block;
+    padding: 0px 15px;
+    min-width: 115px;
+    height: 44px;
+    font-family: $font3;
+    @include font(16px, 42px, $color1, null, -0.1px);
+    text-align: center;
+    background-color: $color39;
+    @include border-radius(6px);
+    @include box-shadow(0px 9px 20px -1px transparent);
+    border: 1px solid $color39;
+    $transition: background-color 0.3s, box-shadow 0.3s, border 0.3s, color 0.3s;
+    @include transition($transition);
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color3;
+      border: 1px solid $color3;
+    }
+  }
+
+  &.invert {
+    label {
+      min-width: 107px;
+      height: 41px;
+      line-height: 39px;
+      color: $color2-4;
+      background-color: $color1;
+      border: 1px solid $color48;
+
+      &:hover {
+        color: $color1;
+        background-color: $color3;
+        border: 1px solid $color3;
+      }
+    }
+  }
+}

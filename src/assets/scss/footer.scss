@@ -1,0 +1,62 @@
+footer {
+  position: relative;
+  padding-top: 86px;
+  padding-bottom: 150px;
+  background-color: $color1;
+  z-index: 1;
+
+  .wrapper {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .col {
+      width: 305px;
+    }
+  }
+
+  .langBlock {
+    position: absolute;
+    left: 40px;
+    bottom: -18px;
+
+    @media (max-width: $maxMediaMD) {
+      left: 0px;
+    }
+  }
+}
+
+
+.footMenu {
+  .title {
+    display: block;
+    font-family: $font2;
+    @include font(18px, 23px, $color2-4, bold, null);
+
+    &+ul {
+      margin-top: 29px;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        // font-family: $font4;
+        @include font(18px, 22px, $color2-7, null, null);
+        @include transition(color 0.3s);
+
+        &:hover {
+          color: $color3;
+        }
+      }
+
+      &+li {
+        margin-top: 15px;
+      }
+    }
+  }
+}

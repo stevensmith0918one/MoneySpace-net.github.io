@@ -1,0 +1,682 @@
+.createLinkAnimation {
+  .animated {
+    @include animation-duration(16s);
+    @include animation-fill-mode(forwards);
+    @include animation-iteration-count(infinite);
+    @include animation-play-state(paused);
+  }
+
+  &.runningAnimation {
+    .animated {
+      @include animation-play-state(running);
+    }
+  }
+
+  .animationWrapper {
+    @include animation-name(animationWrapper);
+  }
+}
+
+.createLinkForm {
+  .typingText {
+    display: inline-block;
+    width: 0px;
+    height: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &.product {
+      @include animation-name(typingProduct);
+    }
+
+    &.sum {
+      @include animation-name(typingSum);
+    }
+  }
+
+  &.animated {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+    @include animation-name(linkFormAnim);
+  }
+}
+
+@keyframes linkFormAnim {
+
+  0%,
+  13% {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+  }
+
+  16.3%,
+  32.75% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+
+  39%,
+  100% {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+  }
+}
+
+@keyframes typingProduct {
+
+  0%,
+  22% {
+    width: 0px;
+  }
+
+  24%,
+  100% {
+    width: 125px;
+  }
+}
+
+@keyframes typingSum {
+
+  0%,
+  22% {
+    width: 0px;
+  }
+
+  23%,
+  100% {
+    width: 57px;
+  }
+}
+
+.createLinkCard {
+  &.animated {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+    @include animation-name(linkCardAnim);
+  }
+
+  [class*="btn"] {
+    &.animated {
+      opacity: 0;
+      @include transform(translate3d(100%, 0, 0));
+      @include animation-name(linkBtnAnim);
+      @include animation-timing-function(ease-in-out);
+    }
+  }
+}
+
+@keyframes linkCardAnim {
+
+  0%,
+  30.25% {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+  }
+
+  36%,
+  50% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+
+  53%,
+  100% {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+  }
+}
+
+@keyframes linkBtnAnim {
+
+  0%,
+  43% {
+    opacity: 0;
+    @include transform(translate3d(100%, 0, 0));
+  }
+
+  43.75%,
+  100% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+}
+
+.createLinkPayForm {
+  .fadingText {
+    opacity: 0;
+    @include animation-name(linkFadingText);
+  }
+
+  &.animated {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+    @include animation-name(linkPayFormAnim);
+  }
+}
+
+@keyframes linkPayFormAnim {
+
+  0%,
+  50% {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+  }
+
+  53%,
+  100% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+}
+
+@keyframes linkFadingText {
+
+  0%,
+  66% {
+    opacity: 0;
+  }
+
+  67%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.createLinkPayCard {
+  &.animated {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+    @include animation-name(linkPayCardAnim);
+  }
+}
+
+@keyframes linkPayCardAnim {
+
+  0%,
+  62.5% {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+  }
+
+  65%,
+  68% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+
+  70.5%,
+  100% {
+    opacity: 0;
+    @include transform(translate3d(2000px, 0, 0));
+  }
+}
+
+.createLinkResult {
+  &.animated {
+    @include animation-name(linkResultAnim);
+  }
+}
+
+@keyframes linkResultAnim {
+  0%,
+  83.3% {
+    opacity: 0;
+    @include transform(scale(0.1));
+  }
+
+  84.2% {
+    opacity: 1;
+    @include transform(scale(1.1));
+  }
+
+  85.1% {
+    @include transform(scale(0.9));
+  }
+
+  86%,
+  100% {
+    opacity: 1;
+    @include transform(scale(1));
+  }
+}
+
+@keyframes animationWrapper {
+  0%,
+  97% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.getLinkBlock {
+  .animated {
+    @include animation-duration(15s);
+    @include animation-fill-mode(forwards);
+    @include animation-iteration-count(infinite);
+    @include animation-play-state(paused);
+  }
+
+  &.runningAnimation {
+    .animated {
+      @include animation-play-state(running);
+    }
+  }
+
+  .field {
+    &.priceBlock {
+      opacity: 0;
+      @include animation-name(priceFadeIn);
+    }
+  }
+
+  [class*="btn"] {
+    opacity: 0;
+    @include animation-name(btnFadeIn);
+
+    .text {
+      position: relative;
+      @include animation-name(typeProductLink);
+
+      span {
+        &:nth-child(1) {
+          @include animation-name(typeProductLink1);
+
+        }
+
+        &:nth-child(2) {
+          @include animation-name(typeProductLink2);
+
+        }
+
+        &:nth-child(3) {
+          @include animation-name(typeProductLink3);
+
+        }
+
+        &:nth-child(4) {
+          @include animation-name(typeProductLink4);
+
+        }
+      }
+    }
+  }
+
+  .data {
+    &.name {
+      @include animation-name(typingProductName);
+    }
+
+    &.price {
+      @include animation-name(typingProductPrice);
+    }
+  }
+}
+
+@keyframes typingProductName {
+
+  0%,
+  20% {
+    width: 0px;
+  }
+
+  23%,
+  95% {
+    width: 175px;
+  }
+
+  97%,
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes priceFadeIn {
+
+  0%,
+  36% {
+    opacity: 0;
+  }
+
+  39%,
+  95% {
+    opacity: 1;
+  }
+
+  97%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typingProductPrice {
+
+  0%,
+  47% {
+    width: 0px;
+  }
+
+  49%,
+  100% {
+    width: 60px;
+  }
+}
+
+@keyframes btnFadeIn {
+
+  0%,
+  60% {
+    opacity: 0;
+  }
+
+  62%,
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes typeProductLink {
+
+  0%,
+  60% {
+    top: 10px;
+    @include font(20px, 20px, $color2-4, bold, null);
+    opacity: 0;
+  }
+
+  61.5% {
+    opacity: 1;
+  }
+
+  63%,
+  100% {
+    top: 0px;
+    @include font(30px, 30px, $color1, bold, null);
+  }
+}
+
+@media (max-width: $maxMediaMD) {
+  @keyframes typeProductLink {
+
+    0%,
+    60% {
+      top: 10px;
+      @include font(18px, 18px, $color2-4, bold, null);
+      opacity: 0;
+    }
+
+    61.5% {
+      opacity: 1;
+    }
+
+    63%,
+    100% {
+      top: 0px;
+      @include font(28px, 28px, $color1, bold, null);
+    }
+  }
+}
+
+@media (max-width: $maxMediaXS) {
+  @keyframes typeProductLink {
+
+    0%,
+    60% {
+      top: 10px;
+      @include font(12px, 12px, $color2-4, bold, null);
+      opacity: 0;
+    }
+
+    61.5% {
+      opacity: 1;
+    }
+
+    63%,
+    100% {
+      top: 0px;
+      @include font(24px, 24px, $color1, bold, null);
+    }
+  }
+}
+
+@keyframes typeProductLink1 {
+
+  0%,
+  60% {
+    opacity: 0;
+  }
+
+  61%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typeProductLink2 {
+
+  0%,
+  61% {
+    opacity: 0;
+  }
+
+  62%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typeProductLink3 {
+
+  0%,
+  62% {
+    opacity: 0;
+  }
+
+  62.5%,
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes typeProductLink4 {
+
+  0%,
+  62.5% {
+    opacity: 0;
+  }
+
+  63%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.apiImg {
+  .animated {
+    @include animation-play-state(paused);
+  }
+
+  &.runningAnimation {
+    .animated {
+      @include animation-duration(10s);
+      @include animation-fill-mode(forwards);
+      @include animation-iteration-count(infinite);
+      @include animation-play-state(running);
+    }
+  }
+
+  .circle {
+    &:first-child {
+      @include transform(translateX(278px));
+      @include animation-name(apiCircleAnim);
+
+      .text {
+        @include animation-name(apiTextAnim1);
+      }
+    }
+
+    &:last-child {
+      @include animation-name(apiCircleAnim2);
+
+      .text {
+        @include animation-name(apiTextAnim3);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    @include animation-name(apiCircleOverlay);
+  }
+
+  &>.text {
+    opacity: 0;
+    @include animation-name(apiTextAnim2);
+  }
+
+  .icon {
+    opacity: 0;
+    @include animation-name(apiCheckAnim);
+  }
+}
+
+@keyframes apiCircleAnim {
+
+  0%,
+  15% {
+    @include transform(translateX(278px));
+  }
+
+  18%,
+  85% {
+    @include transform(translateX(0px));
+  }
+
+  88%,
+  100% {
+    @include transform(translateX(278px));
+  }
+}
+
+@keyframes apiTextAnim1 {
+
+  0%,
+  23% {
+    opacity: 0;
+  }
+
+  26%,
+  65% {
+    opacity: 1;
+  }
+
+  67.5%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes apiCircleOverlay {
+
+  0%,
+  27% {
+    opacity: 0;
+  }
+
+  30%,
+  65% {
+    opacity: 1;
+  }
+
+  67.5%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes apiTextAnim2 {
+
+  0%,
+  31% {
+    opacity: 0;
+  }
+
+  34%,
+  65% {
+    opacity: 1;
+  }
+
+  67.5%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes apiTextAnim3 {
+
+  0%,
+  35% {
+    opacity: 0;
+    @include transform(translate3d(-100%, 0, 0))
+  }
+
+  38%,
+  65% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+
+  67.5%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes apiCircleAnim2 {
+
+  0%,
+  67% {
+    @include transform(translateX(0px));
+    background-color: $color16;
+  }
+
+  70%,
+  85% {
+    @include transform(translateX(-278px));
+    background-color: $color3;
+  }
+
+  88%,
+  100% {
+    @include transform(translateX(0px));
+    background-color: $color16;
+  }
+}
+
+@keyframes apiCheckAnim {
+
+  0%,
+  67.5% {
+    opacity: 0;
+    @include transform(translate3d(0, -100%, 0));
+  }
+
+  70%,
+  84% {
+    opacity: 1;
+    @include transform(translate3d(0, 0, 0));
+  }
+
+  87%,
+  100% {
+    opacity: 0;
+  }
+}

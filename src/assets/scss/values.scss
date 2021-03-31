@@ -1,0 +1,171 @@
+// colors
+$color1: rgba(255, 255, 255, 1);
+$color1-a1: rgba(255, 255, 255, 0.1);
+$color2: rgba(0, 0, 0, 1);
+$color2-a05: rgba(0, 0, 0, 0.05);
+$color2-a1: rgba(0, 0, 0, 0.1);
+$color2-1: #2b2b2b;
+$color2-2: #012e41;
+$color2-3: #00293b;
+$color2-4: #003b53;
+$color2-5: #002d3f;
+$color2-6: #1b2e38;
+$color2-7: #3d5371;
+$color3: #1266ff;
+$color3-1: #0478e2;
+$color3-2: #3141c5;
+$color3-3: #1a38c8;
+$color3-4: #2646e1;
+$color3-5: #3040c4;
+$color4: #6d7f9a;
+$color5: #e3eeff;
+$color6: #9aa5aa;
+$color7: #306175;
+$color8: #f9fafa;
+$color9: #e1e0e0;
+$color10: #f5f5f5;
+$color11: #cbcbcb;
+$color12: #50c8ff;
+$color13: #012f85;
+$color14: #185fe0;
+$color15: #029ce2;
+$color16: #4fc8ff;
+$color17: #ebf7fd;
+$color18: #cce0fc;
+$color19: #4c6c7a;
+$color20: #03222f;
+$color21: #cde5f0;
+$color22: #eef5ff;
+$color23: #f6faff;
+$color24: #e8f1f4;
+$color25: #d7e3f3;
+$color26: #e7effb;
+$color27: #0e4d66;
+$color28: #f6f6f6;
+$color29: #dcdcdc;
+$color30: #00a1c6;
+$color30-a13: #00a1c613;
+$color31: #2b292d;
+$color32: #7d7d7d;
+$color33: rgba(0, 111, 255, 1);
+$color33-a18: rgba(0, 111, 255, 0.18);
+$color34: #12b2ff;
+$color35: #1291ff;
+$color36: #242f47;
+$color37: #303c57;
+$color38: #5c749e;
+$color39: #39496e;
+$color40: #283247;
+$color41: #1c2334;
+$color42: #d2d2d2;
+$color43: #d8d8d8;
+$color43-a1: #d8d8d810;
+$color43-a6: #d8d8d860;
+$color44: #39c11c;
+$color45: #a6b1c8;
+$color46: #2c3851;
+$color47: #4b7a8d;
+$color48: #dce3e7;
+$color49: #f9f9f9;
+$color50: #1e1d1d;
+$color51: #979797;
+$color52: #bdcce6;
+$color53: #001f58;
+$color53-a83: #001f5883;
+$color54: #ebebeb;
+$color55: #c13ae2;
+$color56: #1b2437;
+$color57: #8e8e93;
+$color58: #48484a;
+$color59: #efeff4;
+$color60: #d1d1d6;
+$color61: rgba(54, 54, 54, 1);
+$color61-a52: rgba(54, 54, 54, 0.52);
+$color62: #162a32;
+$color63: #B5D0F5;
+
+$shadow: rgba(161, 175, 213, 0.25);
+$shadow2: rgba(46, 49, 66, 0.22);
+$shadow3: rgba(0, 59, 83, 0.03);
+$shadow4: rgba(25, 36, 137, 0.44);
+$shadow5: rgba(105, 119, 236, 0.45);
+$shadow6: 0 4px 6px 0 rgba(0, 0, 0, 0.05),
+0 1px 3px 0 rgba(0, 0, 0, 0.1),
+inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+$shadow7: rgba(18, 102, 255, 0.32);
+$shadow8: rgba(81, 85, 94, 0.25);
+
+$btnShadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05),
+0 1px 3px 0 rgba(0, 0, 0, 0.1),
+inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+$btnShadow2: 0 4px 6px 0 rgba(0, 0, 0, 0.05),
+0 1px 3px 0 rgba(0, 0, 0, 0.1),
+inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+
+$containerLG:1440px;
+$containerSD:1200px;
+$containerMD:980px;
+$containerSM:750px;
+$containerXS:100%;
+$containerXSS:100%;
+
+$indent1: 15px;
+$indent2: 20px;
+$indent3: 30px;
+$indent4: 40px;
+$indent5: 60px;
+$indent6: 10px;
+
+$indentO1: -$indent1;
+$indentO2: -$indent2;
+$indentO3: -$indent3;
+$indentO4: -$indent4;
+$indentO5: -$indent5;
+$indentO6: -$indent6;
+
+$col1: 100% * 1 / 12;
+$col2: 100% * 2 / 12;
+$col2_4: 100% / 5;
+$col3: 100% * 3 / 12;
+$col4: 100% * 4 / 12;
+$col5: 100% * 5 / 12;
+$col6: 100% * 6 / 12;
+$col7: 100% * 7 / 12;
+$col8: 100% * 8 / 12;
+$col9: 100% * 9 / 12;
+$col10: 100% * 10 / 12;
+$col11: 100% * 11 / 12;
+$col12: 100% * 12 / 12;
+
+$rowMarginLG: 0px $indentO3;
+$rowMarginSD: 0px $indentO3;
+$rowMarginMD: 0px $indentO3;
+$rowMarginSM: 0px $indentO3;
+$rowMarginXS: 0px $indentO2;
+$rowMarginXSS: 0px $indentO2;
+
+$maxMediaLG: 1739px;
+$maxMediaSD: 1439px;
+$maxMediaMD: 1199px;
+$maxMediaSM: 991px;
+$maxMediaXS: 767px;
+$maxMediaXSS: 479px;
+$minMediaLG: 1740px;
+$minMediaSD: 1440px;
+$minMediaMD: 1200px;
+$minMediaSM: 992px;
+$minMediaXS: 768px;
+$minMediaXSS: 480px;
+
+$font1: 'Barlow';
+$font2: 'Circular';
+$font3: 'Circular Book';
+// $font4: 'Product Sans';
+$font5: 'icomoon';
+$font6: 'DM Serif Display';
+// $font7: 'Codec Pro News';
+// $font8: 'Codec Pro';
+// $font9: 'Work Sans';
+$font10: 'Playfair Display';
+$font11: 'Muli';
+$font12: 'DM Mono';

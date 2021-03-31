@@ -1,0 +1,283 @@
+@media (max-width: $maxMediaLG) {
+  .container {
+    width: 1274px;
+  }
+
+  .mainBanner {
+    padding-top: 120px;
+
+    .left {
+      padding-top: 90px;
+      padding-left: 5px;
+    }
+  }
+
+  .bannerInfo {
+    .slogan {
+      @include font(56px, 1, null, null, -0.5px);
+    }
+  }
+
+  .createLinkAnimation {
+    right: -32px;
+  }
+
+  .mainAbout {
+    padding-top: 243px;
+    padding-bottom: 138px;
+
+    .wrapper {
+      padding-left: 0px;
+    }
+
+    .left {
+      padding-top: 93px;
+    }
+  }
+
+  .mainInfo {
+    padding-bottom: 245px;
+
+    .wrapper {
+      padding-left: 63px;
+      width: 490px;
+    }
+
+    .infoBlock {
+      &+.securityList {
+        margin-top: 35px;
+      }
+    }
+
+    .apiImg {
+      right: 0px;
+    }
+
+    &::before,
+    &::after {
+      right: -30px;
+    }
+  }
+
+  .joinBlock {
+    padding-left: 82px;
+    padding-top: 77px;
+    padding-right: 93px;
+    padding-bottom: 83px;
+    justify-content: space-between;
+
+    .img {
+      width: 419px;
+      height: 539px;
+
+      &.dotsTop {
+        &::before {
+          top: 48px;
+          right: -105px;
+        }
+      }
+
+      &+.info {
+        margin-left: 0px;
+      }
+    }
+
+    .info {
+      padding-top: 10px;
+      width: 436px;
+    }
+
+    .content {
+      &+[class*="btn"] {
+        margin-top: 38px;
+      }
+    }
+
+    &.lg {
+      .img {
+        &+.info {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+
+  .joinSection {
+    &.main {
+      padding-bottom: 100px;
+    }
+  }
+
+  footer {
+    .wrapper {
+      .col {
+        width: 205px;
+      }
+    }
+  }
+
+  // CONTACTS
+
+  .contactsSection {
+    &+footer {
+      margin-top: 110px;
+    }
+  }
+
+  .contactBlock {
+    padding-top: 158px;
+
+    .wrapper {
+      padding-left: 0px;
+
+      .left {
+        padding-top: 24px;
+      }
+    }
+  }
+
+  .mapWrapper {
+    right: -200px;
+    margin-left: -200px;
+
+    .locationBlock {
+      left: -213px;
+      bottom: 62px;
+    }
+
+    &::before {
+      top: -72px;
+      left: -215px;
+    }
+  }
+
+  .mapBlock {
+    height: 625px;
+  }
+
+  .locationBlock {
+    width: 390px;
+    padding: 46px 35px;
+  }
+
+  // PRICING
+
+  .pricingInfo {
+    .info {
+      width: 620px;
+    }
+  }
+
+  // LINKS 
+
+  .linkSectionBuy {
+    .wrapper {
+      padding-left: 15px;
+    }
+
+    .left {
+      &+.right {
+        margin-left: 58px;
+      }
+    }
+  }
+
+  .linkSectionMerch {
+    .wrapper {
+      padding-right: 10px;
+    }
+
+    .left {
+      &+.right {
+        margin-left: 55px;
+      }
+    }
+  }
+
+  // Prohibited businesses
+
+  .businessBlock {
+    .listTempl1 {
+      max-width: 770px;
+    }
+  }
+
+  // ABOUT
+
+  .aboutBanner {
+    .wrapper {
+      max-width: 1025px;
+    }
+
+    .info {
+      max-width: 705px;
+    }
+  }
+
+  .aboutInfo {
+    .left {
+      width: 605px;
+    }
+  }
+
+  .quoteBlock {
+    width: 498px;
+
+    p {
+      padding: 214px 52px 102px;
+    }
+
+    &::before {
+      top: 120px;
+      left: 63px;
+    }
+  }
+
+  // PAYMENT
+
+  .paymentSection {
+    padding-bottom: 115px;
+  }
+
+  .codeBlock {
+    .contentBlock {
+      [class*="btn"] {
+        right: 28px;
+      }
+    }
+  }
+
+  // PAYMENT DEMO
+
+  .demoSection {
+    margin-top: 45px;
+    padding-top: 72px;
+    padding-bottom: 66px;
+
+    .titleBlock {
+      padding-left: 0px;
+    }
+  }
+
+  .demoInfo {
+    width: 391px;
+
+    &+.demoSlider {
+      margin-left: 290px;
+    }
+  }
+
+  .productCard {
+    .name {
+      padding-left: 0px;
+    }
+
+    .description {
+      padding-left: 0px;
+
+      &+.more {
+        margin-top: 14px;
+      }
+    }
+  }
+}

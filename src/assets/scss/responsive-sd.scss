@@ -1,0 +1,78 @@
+@media (max-width: $maxMediaSD) {
+  // MAIN PAGE
+
+  .container {
+    width: 1200px;
+  }
+
+  .mainBanner {
+    .wrapper {
+      padding-right: 0px;
+    }
+  }
+
+  .createLinkAnimation {
+    right: 0px;
+    @include transform(scale(0.9));
+    @include transform-origin(0px 0px);
+  }
+
+  .mainAbout {
+    .right {
+      margin-left: 200px;
+    }
+  }
+
+  .joinBlock {
+    padding-left: 80px;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+  }
+
+  footer {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  // CONTACTS
+
+  .mapWrapper {
+    right: -150px;
+    margin-left: -150px;
+
+    .locationBlock {
+      left: -185px;
+    }
+  }
+
+  // LINKS
+
+  .stepItem {
+    .content {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // Prohibited businesses
+
+  .businessBlock {
+    padding-bottom: 165px;
+  }
+
+  // PAYMENT DEMO
+  
+  .demoSection {
+    .contentBlock {
+      justify-content: space-between;
+    }
+  }
+
+  .demoInfo {
+    &+.demoSlider {
+      margin-left: 30px;
+    }
+  }
+}

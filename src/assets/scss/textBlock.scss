@@ -1,0 +1,94 @@
+.sectionTitle {
+  position: relative;
+  display: block;
+  color: $color2-4;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    background-color: $color12;
+  }
+
+  &.lg {
+    padding-top: 25px;
+    @include font(66px, 1.03, null, null, -2.2px);
+
+    @media (max-width: $maxMediaSM) {
+      font-size: 46px;
+      line-height: 48px;
+      letter-spacing: -1.5px;
+    }
+
+    &::before {
+      left: 0px;
+      width: 45px;
+      height: 5px;
+    }
+  }
+
+  &.md {
+    padding-top: 31px;
+    @include font(59px, 1.1, null, null, -1.97px);
+
+    @media (max-width: $maxMediaSM) {
+      padding-top: 21px;
+
+      br {
+        display: none;
+      }
+    }
+
+    &::before {
+      left: 5px;
+      width: 30px;
+      height: 5px;
+    }
+  }
+}
+
+.textBlock {
+  .title {
+    display: block;
+    @include font(25px, 2.5, $color2-5, 600, -0.83px);
+
+    @media (max-width: $maxMediaSM) {
+      line-height: 2.1;
+    }
+  }
+
+  p {
+    @include font(20px, 34px, $color2-4, null, null);
+
+    @media (max-width: $maxMediaMD) {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: $maxMediaSM) {
+      font-size: 17px;
+      line-height: 28px;
+    }
+  }
+
+  &.invert {
+    p {
+      color: $color1;
+    }
+  }
+
+  &.lg {
+    p {
+      font-size: 24px;
+
+      @media (max-width: $maxMediaLG) {
+        font-size: 20px;
+      }
+
+      @media (max-width: $maxMediaSM) {
+        line-height: 34px;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.bodyModal {
+  overflow: hidden;
+}
+
+.modalsScroll {
+  overflow: auto;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: -1;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: none;
+
+  &.open {
+    z-index: 55;
+    display: block;
+  }
+}
+
+.modals {
+  height: 100vh;
+  width: 100vw;
+
+  &.table {
+    display: table;
+  }
+
+  &>.tCell {
+    // padding: 40px 15px 15px;
+    padding: 15px;
+    overflow: auto;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.overlayModal {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: $color61-a52;
+  cursor: pointer;
+  display: none;
+}
+
+.paymentForm {
+  padding-left: 50px;
+  padding-top: 54px;
+  padding-right: 50px;
+  padding-bottom: 54px;
+  max-width: 582px;
+  background-color: $color1;
+  @include border-radius(11px);
+  @include box-shadow(0px 72px 44px 0px $shadow8);
+
+  .headBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &+.formBlock {
+      margin-top: 59px;
+    }
+  }
+
+  .formTitle {
+    font-family: $font2;
+    @include font(30px, 1, $color2-2, 500, -0.3px);
+  }
+
+  .fieldsWrap {
+    &+.checkWrap {
+      margin-top: 24px;
+    }
+  }
+
+  .fieldItem {
+    display: flex;
+
+    .col {
+      flex-grow: 1;
+
+      &:first-child {
+        width: 238px;
+        flex-shrink: 0;
+      }
+
+      &+.col {
+        margin-left: 20px;
+      }
+    }
+
+    &+.fieldItem {
+      margin-top: 17px;
+    }
+  }
+
+  [class*="btn"] {
+    margin-top: 25px;
+  }
+}
