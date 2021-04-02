@@ -6,7 +6,7 @@
           <div class="siteLogo">
             <img src="@/assets/img/logo.png" alt="logo">
             <span>money space</span>
-            <a href="#/home">main</a>
+            <a href="#/">main</a>
           </div>
         </div>
         <div class="menuWrapper menuSm">
@@ -15,7 +15,7 @@
             <span class="menuTitleSm">Menu</span>
             <nav>
               <ul class="menuList">
-                <li><a href="#">Payment Links</a></li>
+                <li><a href="#/payment">Payment Links</a></li>
                 <li><a href="#/pricing">Pricing & Plans</a></li>
                 <li><a href="#/contact-us">Contact Us</a></li>
               </ul>

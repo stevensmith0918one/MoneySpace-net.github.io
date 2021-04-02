@@ -4,10 +4,11 @@ import HomePage from "./pages/HomePage";
 import PricingPage from "./pages/PricingPage";
 import * as VueRouter from 'vue-router'
 import ContactUsPage from "./pages/ContactUsPage";
+import PaymentPage from "./pages/PaymentPage";
 
 const routes = [
     {
-        path: '/home',
+        path: '/',
         component: HomePage
     },
     {
@@ -17,6 +18,14 @@ const routes = [
     {
         path: '/contact-us',
         component: ContactUsPage
+    },
+    {
+        path: '/payment',
+        component: PaymentPage
+    },
+    {
+        path :'/*',
+        component: HomePage
     }
 ]
 
