@@ -17,7 +17,7 @@
               <ul class="menuList">
                 <li><a href="#">Payment Links</a></li>
                 <li><a href="#/pricing">Pricing & Plans</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#/contact-us">Contact Us</a></li>
               </ul>
               <div class="langBlock sm">
                 <div class="title">Language</div>
