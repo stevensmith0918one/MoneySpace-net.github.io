@@ -1,15 +1,11 @@
 <template>
-  <HomePage msg="Welcome to Your Vue.js App"/>
+  <router-view/>
 </template>
 
 <script>
-import HomePage from './pages/HomePage.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HomePage
-  }
+  name: 'App'
 }
 </script>
 
