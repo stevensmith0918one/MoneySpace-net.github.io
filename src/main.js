@@ -5,6 +5,7 @@ import PricingPage from "./pages/PricingPage";
 import * as VueRouter from 'vue-router'
 import ContactUsPage from "./pages/ContactUsPage";
 import PaymentPage from "./pages/PaymentPage";
+import  'animate.css';
 
 const routes = [
     {

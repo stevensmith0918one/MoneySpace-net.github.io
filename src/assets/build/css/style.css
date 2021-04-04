@@ -3129,10 +3129,11 @@ header {
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused; }
+  /*-webkit-animation-play-state: paused;*/
+  /*-moz-animation-play-state: paused;*/
+  /*-o-animation-play-state: paused;*/
+  /*animation-play-state: paused; */
+}
 .createLinkAnimation.runningAnimation .animated {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
@@ -3415,10 +3416,11 @@ header {
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused; }
+  /*-webkit-animation-play-state: paused;*/
+  /*-moz-animation-play-state: paused;*/
+  /*-o-animation-play-state: paused;*/
+  /*animation-play-state: paused; */
+}
 .getLinkBlock.runningAnimation .animated {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;

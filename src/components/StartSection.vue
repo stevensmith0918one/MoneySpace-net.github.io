@@ -24,7 +24,7 @@
                         </ul>
                     </div>
                     <div class="right">
-                        <div class="createLinkAnimation">
+                        <div class="createLinkAnimation animated">
                             <div class="animationWrapper animated">
                                 <div class="createLinkForm animated">
                                     <div class="headBlock">
@@ -148,9 +148,12 @@
                                         </div>
                                     </div>
                                 </div>
+                              <transition>
                                 <div class="createLinkPayCard animated">
-                                    <img src="@/assets/img/card.png" alt="card">
+                                  <img src="@/assets/img/card.png" alt="card">
                                 </div>
+                              </transition>
+
                                 <div class="createLinkResult animated">
                                     <div class="icon"><img src="@/assets/img/done.svg" alt="done"></div>
                                     <span class="text">On your way</span>
@@ -175,7 +178,6 @@ export default {
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 </style>
