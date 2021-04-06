@@ -1,11 +1,13 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import * as VueRouter from 'vue-router'
+import i18n from '@/plugins/i18n';
+import  'animate.css';
+
+import App from './App.vue';
 import HomePage from "./pages/HomePage";
 import PricingPage from "./pages/PricingPage";
-import * as VueRouter from 'vue-router'
 import ContactUsPage from "./pages/ContactUsPage";
 import PaymentPage from "./pages/PaymentPage";
-import  'animate.css';
 
 const routes = [
     {
@@ -35,8 +37,7 @@ const router = VueRouter.createRouter({
     routes
 })
 
-
-
-const moneyspaceApp = createApp(App)
+const moneyspaceApp = createApp(i18n, App)
+moneyspaceApp.use(i18n)
 moneyspaceApp.use(router)
 moneyspaceApp.mount('#bodyWrap')
