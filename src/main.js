@@ -1,6 +1,5 @@
 import { createApp } from 'vue';
 import * as VueRouter from 'vue-router'
-import i18n from '@/plugins/i18n';
 import  'animate.css';
 
 import App from './App.vue';
@@ -37,7 +36,6 @@ const router = VueRouter.createRouter({
     routes
 })
 
-const moneyspaceApp = createApp(i18n, App)
-moneyspaceApp.use(i18n)
+const moneyspaceApp = createApp(App)
 moneyspaceApp.use(router)
 moneyspaceApp.mount('#bodyWrap')

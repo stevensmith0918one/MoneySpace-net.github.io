@@ -3596,10 +3596,23 @@ header {
   100% {
     opacity: 1; } }
 .apiImg .animated {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused; }
+  -webkit-animation-duration: 16s;
+  -moz-animation-duration: 16s;
+  -o-animation-duration: 16s;
+  animation-duration: 16s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /*-webkit-animation-play-state: paused;*/
+  /*-moz-animation-play-state: paused;*/
+  /*-o-animation-play-state: paused;*/
+  /*animation-play-state: paused; */
+}
 .apiImg.runningAnimation .animated {
   -webkit-animation-duration: 10s;
   -moz-animation-duration: 10s;
