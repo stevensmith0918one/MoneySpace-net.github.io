@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="apiImg animatedBlock">
+        <div :class="{ apiImg: isActive(), animatedBlock: isActive() }">
             <div class="circleWrap">
                 <div class="circle animated">
                     <span class="text animated">Webiste</span>
@@ -55,7 +55,26 @@
 
 <script>
 export default {
-  name: 'MainInfo'
+  name: 'MainInfo',
+  data: function() {
+  return {
+      scrollPosition: null
+    };
+  },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll () {
+      this.scrollPosition = window.scrollY
+    },
+    isActive() {
+      return this.scrollPosition > 2000;
+    }
+  }
 }
 </script>
 
