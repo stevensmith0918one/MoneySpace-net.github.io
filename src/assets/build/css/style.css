@@ -3676,20 +3676,20 @@ header {
 
 @keyframes apiCircleAnim {
   0%,
-  15% {
+  2% {
     -moz-transform: translateX(278px);
     -ms-transform: translateX(278px);
     -webkit-transform: translateX(278px);
     -o-transform: translateX(278px);
     transform: translateX(278px); }
-  18%,
-  85% {
+  5%,
+  75% {
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -o-transform: translateX(0px);
     transform: translateX(0px); }
-  88%,
+  78%,
   100% {
     -moz-transform: translateX(278px);
     -ms-transform: translateX(278px);
@@ -3698,52 +3698,52 @@ header {
     transform: translateX(278px); } }
 @keyframes apiTextAnim1 {
   0%,
-  23% {
+  5% {
     opacity: 0; }
-  26%,
-  65% {
+  8%,
+  60% {
     opacity: 1; }
-  67.5%,
+  62.5%,
   100% {
     opacity: 0; } }
 @keyframes apiCircleOverlay {
   0%,
-  27% {
+  8% {
     opacity: 0; }
-  30%,
-  65% {
+  13%,
+  55% {
     opacity: 1; }
-  67.5%,
+  57.5%,
   100% {
     opacity: 0; } }
 @keyframes apiTextAnim2 {
   0%,
-  31% {
+  10% {
     opacity: 0; }
-  34%,
-  65% {
+  13%,
+  55% {
     opacity: 1; }
-  67.5%,
+  60.5%,
   100% {
     opacity: 0; } }
 @keyframes apiTextAnim3 {
   0%,
-  35% {
+  15% {
     opacity: 0;
     -moz-transform: translate3d(-100%, 0, 0);
     -ms-transform: translate3d(-100%, 0, 0);
     -webkit-transform: translate3d(-100%, 0, 0);
     -o-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0); }
-  38%,
-  65% {
+  18%,
+  55% {
     opacity: 1;
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-  67.5%,
+  60.5%,
   100% {
     opacity: 0; } }
 @keyframes apiCircleAnim2 {
@@ -3756,14 +3756,14 @@ header {
     transform: translateX(0px);
     background-color: #4fc8ff; }
   70%,
-  85% {
+  75% {
     -moz-transform: translateX(-278px);
     -ms-transform: translateX(-278px);
     -webkit-transform: translateX(-278px);
     -o-transform: translateX(-278px);
     transform: translateX(-278px);
     background-color: #1266ff; }
-  88%,
+  78%,
   100% {
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
@@ -3781,16 +3781,18 @@ header {
     -o-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0); }
   70%,
-  84% {
+  72% {
     opacity: 1;
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-  87%,
+  78%,
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 .sectionTitle {
   position: relative;
   display: block;
