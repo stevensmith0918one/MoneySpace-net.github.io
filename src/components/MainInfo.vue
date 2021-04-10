@@ -58,7 +58,8 @@ export default {
   name: 'MainInfo',
   data: function() {
   return {
-      scrollPosition: null
+      scrollPosition: null,
+      screenWidth: null
     };
   },
   mounted () {
@@ -69,10 +70,21 @@ export default {
   },
   methods: {
     handleScroll () {
-      this.scrollPosition = window.scrollY
+      this.scrollPosition = window.scrollY;
+      this.screenWidth = document.scrollingElement.clientWidth;
     },
     isActive() {
-      return this.scrollPosition > 2000;
+      switch(true) {
+        case (this.screenWidth < 751):
+          return this.scrollPosition > 2586;
+        case (this.screenWidth < 975):
+          return this.scrollPosition > 1900;
+        case (this.screenWidth < 1183):
+          //TODO use exact scroll position after fix unexpected element appearing in bottom left
+          return this.scrollPosition > 1478;
+        default:
+          return this.scrollPosition > 2000
+      }
     }
   }
 }
