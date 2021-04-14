@@ -6,9 +6,10 @@
                 <div class="wrapper">
                     <div class="left">
                         <div class="bannerInfo">
-                            <span class="slogan">Accepting credit cards online just got easier!</span>
-                            <p>evolve your business in new markets around the globe with our straightforward payment
-                                solutions.</p>
+<!--                          <button @click="setLocale('en')" class="button">English</button>-->
+<!--                          <button @click="setLocale('th')" class="button">Thailand</button>-->
+                            <span class="slogan">{{t('slogan1', {}, {locale: lang})}}</span>
+                            <p>{{t('slogan2', {}, {locale: lang})}}</p>
                             <a href="#" class="btnIconType1">
                                 <span class="in">
                                     <span class="text">Signup</span>
@@ -170,11 +171,26 @@
 
 <script>
 import Header from "./Header";
+import {useI18n} from "vue-i18n";
 export default {
   name: 'StartSection',
   components: {Header},
   props: {
     msg: String
+  },
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  },
+  data() {
+    return {
+      lang: 'en'
+    }
+  },
+  methods: {
+    setLocale(locale) {
+      this.lang = locale;
+    }
   }
 }
 </script>
