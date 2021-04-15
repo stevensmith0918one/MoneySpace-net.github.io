@@ -42,21 +42,29 @@
         </div>
       </div>
       <div class="right">
-        <div class="langBlock">
-          <div class="head">
-            <div class="in">
+        <div>
+          <button @click="setLocale('en')" class="button">
               <img src="@/assets/img/eng.png" alt="eng" class="lang">
-              <img src="@/assets/img/arrow.svg" alt="arrow" class="arr">
-            </div>
-          </div>
-          <div class="list">
-            <div class="in">
-              <a href="#">
-                <img src="@/assets/img/thai.png" alt="thai" class="lang">
-              </a>
-            </div>
-          </div>
+          </button>
+          <button @click="setLocale('th')" class="button">
+            <img src="@/assets/img/thai.png" alt="thai" class="lang">
+          </button>
         </div>
+<!--        <div class="langBlock">-->
+<!--          <div class="head animated">-->
+<!--            <div class="in animated">-->
+<!--              <img @click="setLocale('en')" src="@/assets/img/eng.png" alt="eng" class="lang">-->
+<!--              <img src="@/assets/img/arrow.svg" alt="arrow" class="arr">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="list">-->
+<!--            <div class="in animated">-->
+<!--              <a href="#">-->
+<!--                <img @click="setLocale('th')" src="@/assets/img/thai.png" alt="thai" class="lang">-->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
         <a href="#" class="btnFillType1">Signup</a>
         <a href="#" class="siteLink loginSm">Sign Up</a>
         <div class="openMenuBtn">
@@ -70,8 +78,29 @@
 </template>
 
 <script>
+import {useI18n} from "vue-i18n";
+
 export default {
-  name: 'Header'
+  name: 'Header',
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  },
+  methods: {
+    setLocale(locale) {
+      this.locale = locale;
+      localStorage.setItem('locale', locale);
+    }
+  },
+  data() {
+    return {
+      languages: [
+        { flag: 'us', language: 'en', title: 'English' },
+        { flag: 'th', language: 'th', title: 'Thailand' }
+      ],
+      lang: 'en'
+    };
+  }
 }
 </script>
 

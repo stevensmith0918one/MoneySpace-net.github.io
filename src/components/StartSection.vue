@@ -6,10 +6,8 @@
                 <div class="wrapper">
                     <div class="left">
                         <div class="bannerInfo">
-<!--                          <button @click="setLocale('en')" class="button">English</button>-->
-<!--                          <button @click="setLocale('th')" class="button">Thailand</button>-->
-                            <span class="slogan">{{t('slogan1', {}, {locale: lang})}}</span>
-                            <p>{{t('slogan2', {}, {locale: lang})}}</p>
+                            <span class="slogan">{{t('slogan1', {}, {locale: locale})}}</span>
+                            <p>{{t('slogan2', {}, {locale: locale})}}</p>
                             <a href="#" class="btnIconType1">
                                 <span class="in">
                                     <span class="text">Signup</span>
@@ -182,14 +180,10 @@ export default {
     const {t, locale} = useI18n();
     return {t, locale}
   },
-  data() {
-    return {
-      lang: 'en'
-    }
-  },
   methods: {
     setLocale(locale) {
-      this.lang = locale;
+      this.locale = locale;
+      localStorage.setItem('locale', locale);
     }
   }
 }

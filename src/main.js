@@ -1,16 +1,13 @@
 import { createApp } from 'vue';
 import * as VueRouter from 'vue-router';
-import {createI18n} from 'vue-i18n';
 import  'animate.css';
-
-import en from './translations/en.json';
-import th from './translations/th.json';
 
 import App from './App.vue';
 import HomePage from "./pages/HomePage";
 import PricingPage from "./pages/PricingPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import PaymentPage from "./pages/PaymentPage";
+import i18n from "./i18n";
 
 const routes = [
     {
@@ -38,14 +35,6 @@ const routes = [
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
     routes
-})
-
-const i18n = createI18n({
-    messages: {
-        en: en,
-        th: th
-    },
-    fallbackLocale: 'th'
 })
 
 const moneyspaceApp = createApp(App)
