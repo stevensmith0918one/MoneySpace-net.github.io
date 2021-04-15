@@ -42,30 +42,22 @@
         </div>
       </div>
       <div class="right">
-        <div>
-          <button @click="setLocale('en')" class="button">
-              <img src="@/assets/img/eng.png" alt="eng" class="lang">
-          </button>
-          <button @click="setLocale('th')" class="button">
-            <img src="@/assets/img/thai.png" alt="thai" class="lang">
-          </button>
-        </div>
-<!--        <div class="langBlock">-->
-<!--          <div class="head animated">-->
-<!--            <div class="in animated">-->
-<!--              <img @click="setLocale('en')" src="@/assets/img/eng.png" alt="eng" class="lang">-->
-<!--              <img src="@/assets/img/arrow.svg" alt="arrow" class="arr">-->
-<!--            </div>-->
+        <nav class="langBlock">
+<!--          <div class="head">-->
+          <ul>
+            <li class="in">
+              <img @click="setLocale('th')" src="@/assets/img/thai.png" alt="thai" class="lang">
+              <img src="@/assets/img/arrow.svg" alt="arrow" class="arr">
+            </li>
 <!--          </div>-->
 <!--          <div class="list">-->
-<!--            <div class="in animated">-->
-<!--              <a href="#">-->
-<!--                <img @click="setLocale('th')" src="@/assets/img/thai.png" alt="thai" class="lang">-->
-<!--              </a>-->
-<!--            </div>-->
+            <li class="in">
+              <img @click="setLocale('en')" src="@/assets/img/eng.png" alt="eng" class="lang">
+            </li>
+          </ul>
 <!--          </div>-->
-<!--        </div>-->
-        <a href="#" class="btnFillType1">Signup</a>
+        </nav>
+        <a href="#" class="btnFillType1">{{t('signup', {}, {locale: locale})}}</a>
         <a href="#" class="siteLink loginSm">Sign Up</a>
         <div class="openMenuBtn">
           <span></span>
