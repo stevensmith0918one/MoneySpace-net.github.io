@@ -5,7 +5,7 @@
         <div class="logoWrapper">
           <div class="siteLogo">
             <img src="@/assets/img/logo.png" alt="logo">
-            <span>money space</span>
+            <span>{{t('header.logo', {}, {locale: locale})}}</span>
             <a href="#/">main</a>
           </div>
         </div>
@@ -15,9 +15,9 @@
             <span class="menuTitleSm">Menu</span>
             <nav>
               <ul class="menuList">
-                <li><a href="#/payment">Payment Links</a></li>
-                <li><a href="#/pricing">Pricing & Plans</a></li>
-                <li><a href="#/contact-us">Contact Us</a></li>
+                <li><a href="#/payment">{{t('header.nav.payment', {}, {locale: locale})}}</a></li>
+                <li><a href="#/pricing">{{t('header.nav.pricing', {}, {locale: locale})}}</a></li>
+                <li><a href="#/contact-us">{{t('header.nav.contact-us', {}, {locale: locale})}}</a></li>
               </ul>
               <div class="langBlock sm">
                 <div class="title">Language</div>
@@ -57,7 +57,7 @@
           </ul>
 <!--          </div>-->
         </nav>
-        <a href="#" class="btnFillType1">{{t('signup', {}, {locale: locale})}}</a>
+        <a href="#" class="btnFillType1">{{t('header.signup', {}, {locale: locale})}}</a>
         <a href="#" class="siteLink loginSm">Sign Up</a>
         <div class="openMenuBtn">
           <span></span>

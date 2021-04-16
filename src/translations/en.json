@@ -1,5 +1,47 @@
 {
+  "header": {
+    "logo": "money space",
+    "signup": "signup",
+    "nav": {
+      "payment": "Payment Links",
+      "pricing": "Pricing & Plans",
+      "contact-us": "Contact Us"
+    }
+  },
   "slogan1": "Accepting credit cards online just got easier!",
   "slogan2": "evolve your business in new markets around the globe with our straightforward payment solutions.",
-  "signup": "signup"
+  "title": "Create payment link",
+  "startSection": {
+    "signup": "Signup",
+    "createLinkForm": {
+      "title": "Create payment link",
+      "subtitle": "You can set details and send links to your customers.",
+      "proServiceLabel": "Product / Service Name: ",
+      "proServiceValue": "iPhone 8 / 32gb",
+      "amountLabel": "Amount ( ฿ )",
+      "amountValue": "25,000",
+      "card": "Credit / Debit Card",
+      "submit": "Create Payment Link"
+    },
+    "createLinkCard": {
+      "title": "iPhone 8 / 32gb",
+      "cost": "$25,000",
+      "pay": "Pay"
+    },
+    "createLinkPayForm": {
+      "checkout": "Checkout",
+      "subTitle": "powered by",
+      "title": "money space",
+      "cardNoLabel": "Card Number",
+      "cardNoValue": "1123 2000 3200 2391",
+      "expDateLabel": "Exp Date",
+      "expDateValue1": "08",
+      "expDateValue2": "2020",
+      "cvcLabel": "CVC",
+      "cvcValue": "032",
+      "card": "Credit / Debit Card",
+      "submit": "PAY NOW",
+      "way": "On your way"
+    }
+  }
 }
