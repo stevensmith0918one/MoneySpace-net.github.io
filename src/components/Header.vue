@@ -19,24 +19,24 @@
                 <li><a href="#/pricing">{{t('header.nav.pricing', {}, {locale: locale})}}</a></li>
                 <li><a href="#/contact-us">{{t('header.nav.contact-us', {}, {locale: locale})}}</a></li>
               </ul>
-              <div class="langBlock sm">
-                <div class="title">Language</div>
-                <div class="head">
-                  <div class="in">
-                    <img src="@/assets/img/eng.png" alt="eng" class="lang">
-                    <span class="text">English</span>
-                    <img src="@/assets/img/arrow_right.svg" alt="arrow" class="arr">
-                  </div>
-                </div>
-                <div class="list">
-                  <div class="in">
-                    <a href="#">
-                      <img src="@/assets/img/thai.png" alt="thai" class="lang">
-                      <span class="text">Thai</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+<!--              <div class="langBlock sm">-->
+<!--                <div class="title">Language</div>-->
+<!--                <div class="head">-->
+<!--                  <div class="in">-->
+<!--                    <img src="@/assets/img/eng.png" alt="eng" class="lang">-->
+<!--                    <span class="text">English</span>-->
+<!--                    <img src="@/assets/img/arrow_right.svg" alt="arrow" class="arr">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="list">-->
+<!--                  <div class="in">-->
+<!--                    <a href="#">-->
+<!--                      <img src="@/assets/img/thai.png" alt="thai" class="lang">-->
+<!--                      <span class="text">Thai</span>-->
+<!--                    </a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
             </nav>
           </div>
         </div>
@@ -83,15 +83,6 @@ export default {
       this.locale = locale;
       localStorage.setItem('locale', locale);
     }
-  },
-  data() {
-    return {
-      languages: [
-        { flag: 'us', language: 'en', title: 'English' },
-        { flag: 'th', language: 'th', title: 'Thailand' }
-      ],
-      lang: 'en'
-    };
   }
 }
 </script>

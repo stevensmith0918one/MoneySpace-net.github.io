@@ -8,7 +8,7 @@ const i18n = createI18n({
         th: th
     },
     fallbackLocale: localStorage.getItem('locale') || 'th',
-    locale: localStorage.getItem('locale') || th
+    locale: localStorage.getItem('locale') || 'th'
 })
 
 export default i18n;
