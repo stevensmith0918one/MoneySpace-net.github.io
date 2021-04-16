@@ -43,5 +43,21 @@
       "submit": "PAY NOW",
       "way": "On your way"
     }
+  },
+  "mainAbout": {
+    "left": {
+      "productNameLabel": "Product Name",
+      "productNameValue": "iPhone 8 - Black",
+      "priceLabel": "Price",
+      "priceValue": "$600",
+      "payLabel1": "space.",
+      "payLabel2": "pay",
+      "payValue": "22010"
+    },
+    "right": {
+      "title1": "No Website,",
+      "title2": " Pay-by-Link",
+      "content": "If you sell on social media platforms or blogs, our payment form and payment button is the perfect solution for you. Now you can create and share links instantly – whenever, wherever."
+    }
   }
 }

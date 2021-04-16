@@ -6,17 +6,17 @@
                     <div class="getLinkWrapper">
                         <div class="getLinkBlock animatedBlock">
                             <div class="field nameBlock">
-                                <span class="param">Product Name</span>
-                                <span class="data name animated">iPhone 8 - Black</span>
+                                <span class="param">{{t('mainAbout.left.productNameLabel', {}, {locale: locale})}}</span>
+                                <span class="data name animated">{{t('mainAbout.left.productNameLabel', {}, {locale: locale})}}</span>
                             </div>
                             <div class="field priceBlock animated">
-                                <span class="param">Price</span>
-                                <span class="data price animated">$600</span>
+                                <span class="param">{{t('mainAbout.left.priceLabel', {}, {locale: locale})}}</span>
+                                <span class="data price animated">{{t('mainAbout.left.priceValue', {}, {locale: locale})}}</span>
                             </div>
                             <div class="btnIconType2 animated">
                                 <span class="text animated">
-                                    <span class="animated">space.</span><span class="animated">pay</span><span
-                                        class="animated">/</span><span class="animated">22010</span>
+                                    <span class="animated">{{t('mainAbout.left.payLabel1', {}, {locale: locale})}}</span><span class="animated">{{t('mainAbout.left.payLabel2', {}, {locale: locale})}}</span><span
+                                        class="animated">/</span><span class="animated">{{t('mainAbout.left.payValue', {}, {locale: locale})}}</span>
                                 </span>
                                 <span class="icon-arrow"></span>
                             </div>
@@ -25,13 +25,11 @@
                 </div>
                 <div class="right">
                     <div class="titleContainer">
-                        <span class="sectionTitle lg">No Website,<br> Pay-by-Link</span>
+                        <span class="sectionTitle lg">{{t('mainAbout.right.title1', {}, {locale: locale})}}<br>{{t('mainAbout.right.title2', {}, {locale: locale})}}</span>
                     </div>
                     <div class="contentContainer">
                         <div class="textBlock">
-                            <p>If you sell on social media platforms or blogs, our payment form and payment button
-                                is the perfect solution for you. Now you can create and share links instantly –
-                                whenever, wherever.</p>
+                            <p>{{t('mainAbout.right.content', {}, {locale: locale})}}</p>
                         </div>
                     </div>
                 </div>
@@ -41,10 +39,16 @@
 </template>
 
 <script>
+import {useI18n} from "vue-i18n";
+
 export default {
   name: 'MainAbout',
   props: {
     msg: String
+  },
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
   }
 }
 </script>
