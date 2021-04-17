@@ -81,5 +81,24 @@
       "title2": "a Culture",
       "content": "Assure your security with the global certificate"
     }
+  },
+  "mainInfo": {
+    "title": "Simple API",
+    "content": {
+      "item1": {
+        "value": "If you own a website, whether a shopping cart platform, or custom developed using web platform, our plugins are easy to integrate!"
+      },
+      "item2": {
+        "label": "Safe and Secure",
+        "value": "Our industry-leading technology protects your money and guarantees it arrives safely every time. We’re licensed by government regulators around the world, so you can be sure we meet the highest possible standards"
+      }
+    },
+    "security1": "PCI DSS ",
+    "security2": "Bank of Thailand",
+    "animation": {
+      "website": "Website",
+      "payment": "Payment",
+      "api": "API"
+    }
   }
 }

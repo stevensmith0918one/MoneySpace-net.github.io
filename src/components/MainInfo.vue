@@ -3,35 +3,30 @@
         <div class="container">
             <div class="wrapper">
                 <div class="titleContainer">
-                    <span class="sectionTitle md">Simple API</span>
+                    <span class="sectionTitle md">{{t('mainInfo.title', {}, {locale: locale})}}</span>
                 </div>
                 <div class="contentContainer">
                     <div class="infoBlock">
                         <div class="item">
                             <div class="textBlock lg">
-                                <p>If you own a website, whether a shopping cart platform, or custom developed
-                                    using
-                                    web platform, our plugins are easy to integrate!</p>
+                                <p>{{t('mainInfo.content.item1.value', {}, {locale: locale})}}</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="textBlock lg">
-                                <span class="title">Safe and Secure</span>
-                                <p>Our industry-leading technology protects your money and guarantees it arrives
-                                    safely every time. We’re licensed by government regulators around the world,
-                                    so
-                                    you can be sure we meet the highest possible standards</p>
+                                <span class="title">{{t('mainInfo.content.item2.label', {}, {locale: locale})}}</span>
+                                <p>{{t('mainInfo.content.item2.value', {}, {locale: locale})}}</p>
                             </div>
                         </div>
                     </div>
                     <ul class="securityList">
                         <li>
                             <img src="@/assets/img/security_1.png" alt="secutity">
-                            <span>PCI DSS </span>
+                            <span>{{t('mainInfo.security1', {}, {locale: locale})}}</span>
                         </li>
                         <li>
                             <img src="@/assets/img/security_2.png" alt="secutity">
-                            <span>Bank of Thailand</span>
+                            <span>{{t('mainInfo.security2', {}, {locale: locale})}}</span>
                         </li>
                     </ul>
                 </div>
@@ -40,22 +35,28 @@
         <div :class="{ apiImg: isActive(), animatedBlock: isActive() }">
             <div class="circleWrap">
                 <div class="circle animated">
-                    <span class="text animated">Webiste</span>
+                    <span class="text animated">{{t('mainInfo.animation.website', {}, {locale: locale})}}</span>
                 </div>
                 <div class="circle animated">
-                    <span class="text animated">Payment</span>
+                    <span class="text animated">{{t('mainInfo.animation.payment', {}, {locale: locale})}}</span>
                 </div>
             </div>
             <div class="overlay animated"></div>
-            <span class="text animated">API</span>
+            <span class="text animated">{{t('mainInfo.animation.api', {}, {locale: locale})}}</span>
             <img src="@/assets/img/check.svg" alt="check" class="icon animated">
         </div>
     </div>
 </template>
 
 <script>
+import {useI18n} from "vue-i18n";
+
 export default {
   name: 'MainInfo',
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  },
   data: function() {
   return {
       scrollPosition: null,
