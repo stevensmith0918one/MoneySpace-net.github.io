@@ -59,5 +59,27 @@
       "title2": " Pay-by-Link",
       "content": "If you sell on social media platforms or blogs, our payment form and payment button is the perfect solution for you. Now you can create and share links instantly – whenever, wherever."
     }
+  },
+  "advantages": {
+    "item1": {
+      "title1": "Fraud ",
+      "title2": "management",
+      "content": "Powered by advanced machine learning techniques to safeguard your profits, without lowering conversion."
+    },
+    "item2": {
+      "title1": "Lowest ",
+      "title2": "Price",
+      "content": "Capitalize on operational and cost efficiencies to further grow your business, with the rate of 2.59%"
+    },
+    "item3": {
+      "title1": "More payment ",
+      "title2": "options",
+      "content": "Boost sales volume and creditability to your online merchant"
+    },
+    "item4": {
+      "title1": "Security as ",
+      "title2": "a Culture",
+      "content": "Assure your security with the global certificate"
+    }
   }
 }

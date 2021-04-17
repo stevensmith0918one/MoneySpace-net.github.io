@@ -8,9 +8,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_1.svg" alt="advantage">
                             </div>
-                            <span class="title">Fraud <br>management</span>
-                            <p>Powered by advanced machine learning techniques to safeguard your profits,
-                                without lowering conversion.</p>
+                            <span class="title">{{t('advantages.item1.title1', {}, {locale: locale})}}<br>{{t('advantages.item1.title2', {}, {locale: locale})}}</span>
+                            <p>{{t('advantages.item1.content', {}, {locale: locale})}}</p>
                         </div>
                     </div>
                     <div class="item">
@@ -18,9 +17,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_2.svg" alt="advantage">
                             </div>
-                            <span class="title">Lowest <br>Price</span>
-                            <p>Capitalize on operational and cost efficiencies to further grow your
-                                business, with the rate of 2.59%</p>
+                            <span class="title">{{t('advantages.item2.title1', {}, {locale: locale})}}<br>{{t('advantages.item2.title2', {}, {locale: locale})}}</span>
+                            <p>{{t('advantages.item2.content', {}, {locale: locale})}}</p>
                         </div>
                     </div>
                     <div class="item">
@@ -28,8 +26,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_3.svg" alt="advantage">
                             </div>
-                            <span class="title">More payment <br>options</span>
-                            <p>Boost sales volume and creditability to your online merchant</p>
+                            <span class="title">{{t('advantages.item3.title1', {}, {locale: locale})}}<br>{{t('advantages.item3.title2', {}, {locale: locale})}}</span>
+                            <p>{{t('advantages.item3.content', {}, {locale: locale})}}</p>
                         </div>
                     </div>
                     <div class="item">
@@ -37,8 +35,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_4.svg" alt="advantage">
                             </div>
-                            <span class="title">Security as <br>a Culture</span>
-                            <p>Assure your security with the global certificate</p>
+                            <span class="title">{{t('advantages.item4.title1', {}, {locale: locale})}}<br>{{t('advantages.item4.title2', {}, {locale: locale})}}</span>
+                            <p>{{t('advantages.item4.content', {}, {locale: locale})}}</p>
                         </div>
                     </div>
                 </div>
@@ -48,8 +46,14 @@
 </template>
 
 <script>
+import {useI18n} from "vue-i18n";
+
 export default {
-  name: 'Advantages'
+  name: 'Advantages',
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  }
 }
 </script>
 
