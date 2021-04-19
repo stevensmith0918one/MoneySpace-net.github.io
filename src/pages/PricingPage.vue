@@ -5,8 +5,8 @@
         <div class="container">
           <div class="pricingBanner">
             <div class="pageCaption">
-              <span class="subtitle">Big Fees, Big Problems,</span>
-              <span class="title">Not Here!</span>
+              <span class="subtitle">{{t('pricigPageHeader.subtitle', {}, {locale: locale})}}</span>
+              <span class="title">{{t('pricigPageHeader.title', {}, {locale: locale})}}</span>
             </div>
           </div>
         </div>
@@ -16,14 +16,14 @@
           <div class="calculator">
             <div class="calcForm">
               <div class="headBlock">
-                <span class="title">Fee Calculator</span>
+                <span class="title">{{t('pricingPageContent.calculator.title', {}, {locale: locale})}}</span>
               </div>
               <div class="formBlock">
                 <form action="#">
                   <div class="fieldsWrap">
                     <div class="fieldItem">
                       <div class="inBlockType2">
-                        <label for="amount1">Transaction Amount</label>
+                        <label for="amount1">{{t('pricingPageContent.calculator.fieldItem[0].amountLabel', {}, {locale: locale})}}</label>
                         <div class="inWrap">
                           <input type="text" name="amount1" id="amount1">
                         </div>
@@ -31,54 +31,56 @@
                     </div>
                     <div class="fieldItem">
                       <div class="inBlockType2">
-                        <label for="amount2">Free amount including VAT</label>
+                        <label for="amount2">{{t('pricingPageContent.calculator.fieldItem[1].amountLabel', {}, {locale: locale})}}</label>
                         <div class="inWrap">
                           <input type="text" name="amount2" id="amount2">
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button class="btnFillType2 full">Calculate</button>
+                  <button class="btnFillType2 full">{{t('pricingPageContent.calculator.calculate', {}, {locale: locale})}}</button>
                 </form>
               </div>
             </div>
             <div class="calcInfo">
-              <span class="info">The lowest free <br>rate of 2.59% <br>per transaction</span>
-              <span class="note">free rate may be negotiable for high volume merchants</span>
+              <span class="info">{{t('pricingPageContent.calculator.calcInfo.info[0]', {}, {locale: locale})}}<br>
+                {{t('pricingPageContent.calculator.calcInfo.info[1]', {}, {locale: locale})}}<br>
+                {{t('pricingPageContent.calculator.calcInfo.info[2]', {}, {locale: locale})}}</span>
+              <span class="note">{{t('pricingPageContent.calculator.calcInfo.note', {}, {locale: locale})}}</span>
             </div>
           </div>
           <div class="pricingInfo">
             <div class="titleContainer">
-              <span class="subtitle">Best in Class</span>
-              <span class="title">Withdrawal Fees</span>
+              <span class="subtitle">{{t('pricingPageContent.pricingInfo.subtitle', {}, {locale: locale})}}</span>
+              <span class="title">{{t('pricingPageContent.pricingInfo.title', {}, {locale: locale})}}</span>
             </div>
             <div class="contentContainer">
               <div class="info">
                 <div class="textBlock">
-                  <p>We provide a free refund service to your customer before 20.00 hrs. After 20.00 hrs.,
-                    only a credit card fee is charged for the refund.</p>
+                  <p>{{t('pricingPageContent.pricingInfo.textBlock', {}, {locale: locale})}}</p>
                 </div>
               </div>
               <div class="buttons">
-                <a href="#" class="btnFillType4">Get Started</a>
-                <a href="#" class="btnFillType5">Learn More</a>
+                <a href="#" class="btnFillType4">{{t('pricingPageContent.pricingInfo.buttons[0]', {}, {locale: locale})}}</a>
+                <a href="#" class="btnFillType5">{{t('pricingPageContent.pricingInfo.buttons[1]', {}, {locale: locale})}}</a>
               </div>
             </div>
           </div>
           <div class="tariffList">
             <div class="item">
               <div class="tariffItem">
-                <span class="cost num">15<span>Baht</span></span>
+                <span class="cost num">{{t('pricingPageContent.tariffList.item[0].cost', {}, {locale: locale})}}<span>
+                  {{t('pricingPageContent.tariffList.item[0].constUnit', {}, {locale: locale})}}</span></span>
                 <div class="info">
-                  <p>for a merchant who is receiving a transaction less than 30,000 Baht</p>
+                  <p>{{t('pricingPageContent.tariffList.item[0].info', {}, {locale: locale})}}</p>
                 </div>
               </div>
             </div>
             <div class="item">
               <div class="tariffItem">
-                <span class="cost">Free</span>
+                <span class="cost">{{t('pricingPageContent.tariffList.item[1].cost', {}, {locale: locale})}}</span>
                 <div class="info">
-                  <p>for a merchant who is receiving a transaction more than or equal to 30,000 Baht</p>
+                  <p>{{t('pricingPageContent.tariffList.item[1].info', {}, {locale: locale})}}</p>
                 </div>
               </div>
             </div>
@@ -90,18 +92,18 @@
                 <img src="@/assets/img/image_2.jpg" alt="image">
               </div>
               <div class="info">
-                            <span class="title sm">No monthly fee <br>
-                                No set up / integration <br>
-                                No sale maintenance <br>
+                            <span class="title sm">{{t('pricingPageContent.joinSection.title[0]', {}, {locale: locale})}}<br>
+                                {{t('pricingPageContent.joinSection.title[1]', {}, {locale: locale})}}<br>
+                                {{t('pricingPageContent.joinSection.title[2]', {}, {locale: locale})}}<br>
                             </span>
                 <div class="content">
                   <div class="textBlock">
-                    <p>Start accepting payments with Money Space</p>
+                    <p>{{t('pricingPageContent.joinSection.textBlock', {}, {locale: locale})}}</p>
                   </div>
                 </div>
                 <a href="#" class="btnIconType1 sm">
                                 <span class="in">
-                                    <span class="text">Start Now</span>
+                                    <span class="text">{{t('pricingPageContent.joinSection.text', {}, {locale: locale})}}</span>
                                     <span class="icon-arrow"></span>
                                 </span>
                 </a>
@@ -118,10 +120,15 @@
 <script>
 import Footer from '@/components/Footer'
 import Header from "@/components/Header";
+import {useI18n} from "vue-i18n";
 
 export default {
   components: {Header, Footer },
-  name: 'PricingPage'
+  name: 'PricingPage',
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  }
 }
 </script>
 

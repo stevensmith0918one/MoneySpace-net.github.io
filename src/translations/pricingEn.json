@@ -1,0 +1,59 @@
+{
+  "pricigPageHeader": {
+    "subtitle": "Big Fees, Big Problems,",
+    "title": "Not Here!"
+  },
+  "pricingPageContent": {
+    "calculator": {
+      "title": "Fee Calculator",
+      "fieldItem": [
+        {
+          "amountLabel": "Transaction Amount"
+        },
+        {
+          "amountLabel": "Free amount including VAT"
+        }
+      ],
+      "calculate": "Calculate",
+      "calcInfo": {
+        "info": [
+          "The lowest free ",
+          "rate of 2.59% ",
+          "per transaction"
+        ],
+        "note": "free rate may be negotiable for high volume merchants"
+      }
+    },
+    "pricingInfo": {
+      "subtitle": "Best in Class",
+      "title": "Withdrawal Fees",
+      "textBlock": "We provide a free refund service to your customer before 20.00 hrs. After 20.00 hrs., only a credit card fee is charged for the refund.",
+      "buttons": [
+        "Get Started",
+        "Learn More"
+      ]
+    },
+    "tariffList": {
+      "item": [
+        {
+          "cost": "15",
+          "constUnit": "Baht",
+          "info": "for a merchant who is receiving a transaction less than 30,000 Baht"
+        },
+        {
+          "cost": "Free",
+          "info": "for a merchant who is receiving a transaction more than or equal to 30,000 Baht"
+        }
+      ]
+    },
+    "joinSection": {
+      "title": [
+        "No monthly fee ",
+        "No set up / integration ",
+        "No sale maintenance "
+      ],
+      "textBlock": "Start accepting payments with Money Space",
+      "text": "Start Now"
+    }
+  }
+}

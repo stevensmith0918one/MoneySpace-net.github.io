@@ -24,7 +24,7 @@
                 <li>
                   <a href="tel:021070364 ">
                     <img src="@/assets/img/phone.svg" alt="phone" class="icon">
-                    <span class="data">{{t('contactsList[0]', {}, {locale: locale})}}</span>
+                    <span class="data">{{t('contactsList[1]', {}, {locale: locale})}}</span>
                   </a>
                 </li>
               </ul>
