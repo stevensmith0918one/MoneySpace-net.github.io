@@ -6,25 +6,25 @@
         <div class="wrapper">
           <div class="left">
             <div class="titleContainer">
-              <span class="pageTitle">Contact Us</span>
+              <span class="pageTitle">{{t('pageTitle', {}, {locale: locale})}}</span>
               <span class="pageSubtitle">Money space (Pay enterprise co.,ltd)</span>
             </div>
             <div class="contentContainer">
               <div class="timingBlock">
-                <span class="title">Opening hours:</span>
-                <span class="data">From Monday to Friday. 08.30-17.30 hrs.</span>
+                <span class="title">{{t('contentContainer.title', {}, {locale: locale})}}</span>
+                <span class="data">{{t('contentContainer.data', {}, {locale: locale})}}</span>
               </div>
               <ul class="contactsList">
                 <li>
                   <a href="mailto:th@moneyspace.net">
                     <img src="@/assets/img/mail.svg" alt="mail" class="icon">
-                    <span class="data">th@moneyspace.net</span>
+                    <span class="data">{{t('contactsList[0]', {}, {locale: locale})}}</span>
                   </a>
                 </li>
                 <li>
                   <a href="tel:021070364 ">
                     <img src="@/assets/img/phone.svg" alt="phone" class="icon">
-                    <span class="data">02-107-0364 </span>
+                    <span class="data">{{t('contactsList[0]', {}, {locale: locale})}}</span>
                   </a>
                 </li>
               </ul>
@@ -41,11 +41,10 @@
               <div class="locationBlock">
                 <div class="title">
                   <img src="@/assets/img/location.svg" alt="location" class="icon">
-                  <span class="data">Bangkok</span>
+                  <span class="data">{{t('locationBlock.title', {}, {locale: locale})}}</span>
                 </div>
                 <div class="content">
-                  <p>No.1 Glas Haus Building, P Floor, Room No. P01, Soi Sukhumvit 25,
-                    Sukhumvit road, Khlong Toei Nuea Sub-district, Vadhana District</p>
+                  <p>{{t('locationBlock.content', {}, {locale: locale})}}</p>
                 </div>
               </div>
             </div>
@@ -61,10 +60,15 @@
 <script>
 import Footer from '@/components/Footer'
 import Header from "@/components/Header";
+import {useI18n} from "vue-i18n";
 
 export default {
   components: {Header, Footer},
-  name: 'ContactUsPage'
+  name: 'ContactUsPage',
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  }
 }
 </script>
 

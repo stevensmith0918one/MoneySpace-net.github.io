@@ -178,12 +178,6 @@ export default {
     const {t, locale} = useI18n();
     return {t, locale}
   }
-  // methods: {
-  //   setLocale(locale) {
-  //     this.locale = locale;
-  //     localStorage.setItem('locale', locale);
-  //   }
-  // }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
