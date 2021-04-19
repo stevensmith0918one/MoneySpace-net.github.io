@@ -4,44 +4,44 @@
             <div class="wrapper">
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">Products</span>
+                        <span class="title">{{t('footer.productArea.title', {}, {locale: locale})}}</span>
                         <ul>
-                            <li><a href="#">No Website (Paybylink )</a></li>
-                            <li><a href="#">Website ( Simple API )</a></li>
+                            <li><a href="#">{{t('footer.productArea.products[0]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.productArea.products[1]', {}, {locale: locale})}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">Features</span>
+                        <span class="title">{{t('footer.featureArea.title', {}, {locale: locale})}}</span>
                         <ul>
-                            <li><a href="#">Payments methods</a></li>
-                            <li><a href="#">Integrations</a></li>
-                            <li><a href="#">Security</a></li>
-                            <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Invoice Payments</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[0]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[1]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[2]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[3]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[4]', {}, {locale: locale})}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">Money Space</span>
+                        <span class="title">{{t('footer.moneySpaceArea.title', {}, {locale: locale})}}</span>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Compliance</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Press & PR</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[0]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[1]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[2]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[3]', {}, {locale: locale})}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">FAQs</span>
+                        <span class="title">{{t('footer.faqArea.title', {}, {locale: locale})}}</span>
                         <ul>
-                            <li><a href="#">Prohibit Businesses</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">{{t('footer.faqArea.faqs[0]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.faqArea.faqs[1]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.faqArea.faqs[2]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.faqArea.faqs[3]', {}, {locale: locale})}}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -66,8 +66,14 @@
 </template>
 
 <script>
+import {useI18n} from "vue-i18n";
+
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  }
 }
 </script>
 

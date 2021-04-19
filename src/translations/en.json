@@ -105,5 +105,42 @@
     "title": "Better, Faster, Secure",
     "content": "Start accepting payments with Money Space",
     "start": "Start Now"
+  },
+  "footer": {
+    "productArea": {
+      "title": "Products",
+      "products": [
+        "No Website (Paybylink )",
+        "Website ( Simple API )"
+      ]
+    },
+    "featureArea": {
+      "title": "Features",
+      "features": [
+        "Payments methods",
+        "Integrations",
+        "Security",
+        "Checkout",
+        "Invoice Payments"
+      ]
+    },
+    "moneySpaceArea": {
+      "title": "Money Space",
+      "moneySpaces": [
+        "About Us",
+        "Compliance",
+        "Contact",
+        "Press & PR"
+      ]
+    },
+    "faqArea": {
+      "title": "FAQs",
+      "faqs": [
+        "Prohibit Businesses",
+        "Facebook",
+        "Instagram",
+        "Youtube"
+      ]
+    }
   }
 }

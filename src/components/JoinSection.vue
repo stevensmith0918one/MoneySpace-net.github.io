@@ -32,7 +32,7 @@ export default {
   setup() {
     const {t, locale} = useI18n();
     return {t, locale}
-  },
+  }
 }
 </script>
 
