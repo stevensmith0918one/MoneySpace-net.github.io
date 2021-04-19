@@ -5,26 +5,23 @@
       <div class="paymentSection">
         <div class="wrapper">
           <div class="titleContainer">
-            <span class="pageTitle">Online Payment <span>Gateway</span></span>
+            <span class="pageTitle">{{t('titleContainer.pageTitle[0]', {}, {locale: locale})}} <span>{{t('titleContainer.pageTitle[1]', {}, {locale: locale})}}</span></span>
           </div>
           <div class="contentContainer">
             <div class="info">
               <div class="textBlock">
-                <p>By just calling API for our payment gateway, your online merchant website will be
-                  capable of receiving an online payment through credit cards. Our service
-                  supports over 27 foreign currencies and enables your company to reach customers
-                  across the globe.</p>
+                <p>{{t('contentContainer.textBlock', {}, {locale: locale})}}</p>
               </div>
             </div>
             <a href="#" class="btnIconType3">
               <span class="icon-arrow"></span>
-              <span class="text">Download API Documentation</span>
+              <span class="text">{{t('contentContainer.download', {}, {locale: locale})}}</span>
             </a>
             <div class="apiBlock">
-              <span class="title">Try moneyspace API</span>
+              <span class="title">{{t('contentContainer.try', {}, {locale: locale})}}</span>
               <div class="codeBlock">
                 <div class="headBlock">
-                  <span>Title:</span>
+                  <span>{{t('contentContainer.title', {}, {locale: locale})}}</span>
                 </div>
                 <div class="contentBlock">
 <!--                  <p>&lt;<span class="tag">div</span> <span-->
@@ -58,10 +55,15 @@
 <script>
 import Footer from '@/components/Footer'
 import Header from "@/components/Header";
+import {useI18n} from "vue-i18n";
 
 export default {
   components: {Header, Footer},
-  name: 'PaymentPage'
+  name: 'PaymentPage',
+  setup() {
+    const {t, locale} = useI18n();
+    return {t, locale}
+  }
 }
 </script>
 

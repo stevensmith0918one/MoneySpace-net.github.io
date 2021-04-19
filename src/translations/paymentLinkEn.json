@@ -1,0 +1,14 @@
+{
+  "titleContainer": {
+    "pageTitle": [
+      "Online Payment ",
+      "Gateway"
+    ]
+  },
+  "contentContainer": {
+    "textBlock": "By just calling API for our payment gateway, your online merchant website will be capable of receiving an online payment through credit cards. Our service supports over 27 foreign currencies and enables your company to reach customers across the globe.",
+    "download": "Download API Documentation",
+    "try": "Try moneyspace API",
+    "title": "Title:"
+  }
+}
