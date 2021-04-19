@@ -100,5 +100,10 @@
       "payment": "Payment",
       "api": "API"
     }
+  },
+  "joinSection": {
+    "title": "Better, Faster, Secure",
+    "content": "Start accepting payments with Money Space",
+    "start": "Start Now"
   }
 }
