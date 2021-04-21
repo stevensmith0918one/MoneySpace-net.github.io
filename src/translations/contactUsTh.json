@@ -1,12 +1,10 @@
 {
   "pageTitle": "ติดต่อเรา",
   "pageSubtitle": "Money space (Pay enterprise co.,ltd)",
-  "contentContainer": {
-    "title": "เวลาทำการ:",
-    "data": "จากวันจันทร์ถึงวันศุกร์. 08.30-17.30 น."
-  },
+  "title": "เวลาทำการ:",
+  "data": "จากวันจันทร์ถึงวันศุกร์. 08.30-17.30 น.",
   "contactsList": [
-    "th@moneyspace.net",
+    "th[at]moneyspace.net",
     "02-107-0364"
   ],
   "locationBlock": {

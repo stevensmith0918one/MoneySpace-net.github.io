@@ -1,12 +1,10 @@
 {
   "pageTitle": "Contact Us",
   "pageSubtitle": "Money space (Pay enterprise co.,ltd)",
-  "contentContainer": {
-    "title": "Opening hours:",
-    "data": "From Monday to Friday. 08.30-17.30 hrs."
-  },
+  "title": "Opening hours:",
+  "data": "From Monday to Friday. 08.30-17.30 hrs.",
   "contactsList": [
-    "th@moneyspace.net",
+    "th[at]moneyspace.net",
     "02-107-0364"
   ],
   "locationBlock": {

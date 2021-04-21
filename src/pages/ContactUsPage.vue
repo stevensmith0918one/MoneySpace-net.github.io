@@ -7,12 +7,12 @@
           <div class="left">
             <div class="titleContainer">
               <span class="pageTitle">{{t('pageTitle', {}, {locale: locale})}}</span>
-              <span class="pageSubtitle">Money space (Pay enterprise co.,ltd)</span>
+              <span class="pageSubtitle">{{t('pageSubtitle', {}, {locale: locale})}}</span>
             </div>
             <div class="contentContainer">
               <div class="timingBlock">
-                <span class="title">{{t('contentContainer.title', {}, {locale: locale})}}</span>
-                <span class="data">{{t('contentContainer.data', {}, {locale: locale})}}</span>
+                <span class="title">{{t('title', {}, {locale: locale})}}</span>
+                <span class="data">{{t('data', {}, {locale: locale})}}</span>
               </div>
               <ul class="contactsList">
                 <li>
