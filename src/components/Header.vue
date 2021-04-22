@@ -19,44 +19,26 @@
                 <li><a href="#/pricing">{{t('header.nav.pricing', {}, {locale: locale})}}</a></li>
                 <li><a href="#/contact-us">{{t('header.nav.contact-us', {}, {locale: locale})}}</a></li>
               </ul>
-<!--              <div class="langBlock sm">-->
-<!--                <div class="title">Language</div>-->
-<!--                <div class="head">-->
-<!--                  <div class="in">-->
-<!--                    <img src="@/assets/img/eng.png" alt="eng" class="lang">-->
-<!--                    <span class="text">English</span>-->
-<!--                    <img src="@/assets/img/arrow_right.svg" alt="arrow" class="arr">-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="list">-->
-<!--                  <div class="in">-->
-<!--                    <a href="#">-->
-<!--                      <img src="@/assets/img/thai.png" alt="thai" class="lang">-->
-<!--                      <span class="text">Thai</span>-->
-<!--                    </a>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
             </nav>
           </div>
         </div>
       </div>
       <div class="right">
-        <nav class="langBlock">
-<!--          <div class="head">-->
-          <ul>
-            <li class="in">
-              <img @click="setLocale('th')" src="@/assets/img/thai.png" alt="thai" class="lang">
-              <img src="@/assets/img/arrow.svg" alt="arrow" class="arr">
-            </li>
-<!--          </div>-->
-<!--          <div class="list">-->
-            <li class="in">
-              <img @click="setLocale('en')" src="@/assets/img/eng.png" alt="eng" class="lang">
-            </li>
-          </ul>
-<!--          </div>-->
-        </nav>
+        <div class="langBlock">
+          <div class="head">
+            <div class="in">
+              <img @click="setLocale('th')" src="@/assets/img/thai.png" alt="eng" class="lang">
+              <img @click="showSecondLangBlock(true)" src="@/assets/img/arrow.svg" alt="arrow" class="arr">
+            </div>
+          </div>
+          <div class="list" :class="{ showSecondLangBlockCSS: arrowClicked }">
+            <div class="in">
+              <a href="#">
+                <img @click="setLocale('en')" src="@/assets/img/eng.png" alt="thai" class="lang">
+              </a>
+            </div>
+          </div>
+        </div>
         <a href="#" class="btnFillType1">{{t('header.signup', {}, {locale: locale})}}</a>
         <a href="#" class="siteLink loginSm">Sign Up</a>
         <div class="openMenuBtn">
@@ -78,10 +60,22 @@ export default {
     const {t, locale} = useI18n();
     return {t, locale}
   },
+  data() {
+    return {
+      arrowClicked: false
+    }
+  },
   methods: {
     setLocale(locale) {
       this.locale = locale;
       localStorage.setItem('locale', locale);
+      this.showSecondLangBlock(false);
+    },
+    showSecondLangBlock(arrowClicked) {
+      this.arrowClicked = arrowClicked;
+    },
+    isArrowClicked() {
+      return this.arrowClicked;
     }
   }
 }
@@ -89,4 +83,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.showSecondLangBlockCSS {
+  display: block !important;
+}
 </style>
