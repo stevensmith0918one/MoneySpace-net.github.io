@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <div :class="{ apiImg: isActive(), animatedBlock: isActive() }">
+        <div  :class="{ apiImg: isActive(), animatedBlock: isActive(), visible: isActive(), nonVisible: !isActive() }">
             <div class="circleWrap">
                 <div class="circle animated">
                     <span class="text animated">{{t('mainInfo.animation.website', {}, {locale: locale})}}</span>
@@ -77,12 +77,11 @@ export default {
     isActive() {
       switch(true) {
         case (this.screenWidth < 751):
-          return this.scrollPosition > 2586;
+          return this.scrollPosition > 2563;
         case (this.screenWidth < 975):
-          return this.scrollPosition > 1900;
+          return this.scrollPosition > 1899;
         case (this.screenWidth < 1183):
-          //TODO use exact scroll position after fix unexpected element appearing in bottom left
-          return this.scrollPosition > 1478;
+          return this.scrollPosition > 1599;
         default:
           return this.scrollPosition > 2000
       }
@@ -93,4 +92,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.visible{
+  visibility: visible;
+}
+.nonVisible{
+  visibility: hidden;
+}
 </style>
