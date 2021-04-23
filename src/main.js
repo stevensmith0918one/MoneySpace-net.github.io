@@ -1,13 +1,14 @@
 import { createApp } from 'vue';
 import * as VueRouter from 'vue-router';
 import  'animate.css';
+import i18n from "./i18n";
 
 import App from './App.vue';
 import HomePage from "./pages/HomePage";
 import PricingPage from "./pages/PricingPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import PaymentPage from "./pages/PaymentPage";
-import i18n from "./i18n";
+import BusinessPage from "./pages/BusinessesPage";
 
 const routes = [
     {
@@ -25,6 +26,10 @@ const routes = [
     {
         path: '/payment',
         component: PaymentPage
+    },
+    {
+        path: '/businesses',
+        component: BusinessPage
     },
     {
         path :'/*',

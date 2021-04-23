@@ -33,9 +33,7 @@
           </div>
           <div class="list" :class="{ showSecondLangBlockCSS: arrowClicked }">
             <div class="in">
-              <a href="#">
-                <img @click="setLocale('en')" src="@/assets/img/eng.png" alt="thai" class="lang">
-              </a>
+              <img @click="setLocale('en')" src="@/assets/img/eng.png" alt="thai" class="lang">
             </div>
           </div>
         </div>

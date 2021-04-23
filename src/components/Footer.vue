@@ -38,7 +38,7 @@
                     <div class="footMenu">
                         <span class="title">{{t('footer.faqArea.title', {}, {locale: locale})}}</span>
                         <ul>
-                            <li><a href="#">{{t('footer.faqArea.faqs[0]', {}, {locale: locale})}}</a></li>
+                            <li><a href="/#/businesses">{{t('footer.faqArea.faqs[0]', {}, {locale: locale})}}</a></li>
                             <li><a href="#">{{t('footer.faqArea.faqs[1]', {}, {locale: locale})}}</a></li>
                             <li><a href="#">{{t('footer.faqArea.faqs[2]', {}, {locale: locale})}}</a></li>
                             <li><a href="#">{{t('footer.faqArea.faqs[3]', {}, {locale: locale})}}</a></li>

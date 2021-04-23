@@ -1,0 +1,24 @@
+{
+  "businessSection": {
+    "subtitle": "Prohibited businesses",
+    "title": "Restricted by local law or regulation for any payment channel",
+    "contentBlock": [
+      {
+        "id": "1",
+        "value": "Medical, drugs and Pharmaceuticals"
+      },
+      {
+        "id": "2",
+        "value": "Weapons : Firearms and weapons of all kind"
+      },
+      {
+        "id": "3",
+        "value": "Money transfer services, Cash gifting, Donations or Check Cashing Gambling"
+      },
+      {
+        "id": "4",
+        "value": "Adult or related products or services : Adult entertainment / All sexually-orientated or pornographic merchants"
+      }
+    ]
+  }
+}
