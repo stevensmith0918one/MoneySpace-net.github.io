@@ -6,17 +6,17 @@
                     <div class="getLinkWrapper">
                         <div class="getLinkBlock animatedBlock">
                             <div class="field nameBlock">
-                                <span class="param">{{t('mainAbout.left.productNameLabel', {}, {locale: locale})}}</span>
-                                <span class="data name animated">{{t('mainAbout.left.productNameLabel', {}, {locale: locale})}}</span>
+                                <span class="param">{{t('mainAbout.left.productNameLabel')}}</span>
+                                <span class="data name animated">{{t('mainAbout.left.productNameLabel')}}</span>
                             </div>
                             <div class="field priceBlock animated">
-                                <span class="param">{{t('mainAbout.left.priceLabel', {}, {locale: locale})}}</span>
-                                <span class="data price animated">{{t('mainAbout.left.priceValue', {}, {locale: locale})}}</span>
+                                <span class="param">{{t('mainAbout.left.priceLabel')}}</span>
+                                <span class="data price animated">{{t('mainAbout.left.priceValue')}}</span>
                             </div>
                             <div class="btnIconType2 animated">
                                 <span class="text animated">
-                                    <span class="animated">{{t('mainAbout.left.payLabel1', {}, {locale: locale})}}</span><span class="animated">{{t('mainAbout.left.payLabel2', {}, {locale: locale})}}</span><span
-                                        class="animated">/</span><span class="animated">{{t('mainAbout.left.payValue', {}, {locale: locale})}}</span>
+                                    <span class="animated">{{t('mainAbout.left.payLabel1')}}</span><span class="animated">{{t('mainAbout.left.payLabel2')}}</span><span
+                                        class="animated">/</span><span class="animated">{{t('mainAbout.left.payValue')}}</span>
                                 </span>
                                 <span class="icon-arrow"></span>
                             </div>
@@ -25,11 +25,11 @@
                 </div>
                 <div class="right">
                     <div class="titleContainer">
-                        <span class="sectionTitle lg">{{t('mainAbout.right.title1', {}, {locale: locale})}}<br>{{t('mainAbout.right.title2', {}, {locale: locale})}}</span>
+                        <span class="sectionTitle lg">{{t('mainAbout.right.title1')}}<br>{{t('mainAbout.right.title2')}}</span>
                     </div>
                     <div class="contentContainer">
                         <div class="textBlock">
-                            <p>{{t('mainAbout.right.content', {}, {locale: locale})}}</p>
+                            <p>{{t('mainAbout.right.content')}}</p>
                         </div>
                     </div>
                 </div>

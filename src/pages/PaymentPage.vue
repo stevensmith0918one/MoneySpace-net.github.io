@@ -5,23 +5,23 @@
       <div class="paymentSection">
         <div class="wrapper">
           <div class="titleContainer">
-            <span class="pageTitle">{{t('titleContainer.pageTitle[0]', {}, {locale: locale})}} <span>{{t('titleContainer.pageTitle[1]', {}, {locale: locale})}}</span></span>
+            <span class="pageTitle">{{t('titleContainer.pageTitle[0]')}} <span>{{t('titleContainer.pageTitle[1]')}}</span></span>
           </div>
           <div class="contentContainer">
             <div class="info">
               <div class="textBlock">
-                <p>{{t('contentContainer.textBlock', {}, {locale: locale})}}</p>
+                <p>{{t('contentContainer.textBlock')}}</p>
               </div>
             </div>
             <a href="#" class="btnIconType3">
               <span class="icon-arrow"></span>
-              <span class="text">{{t('contentContainer.download', {}, {locale: locale})}}</span>
+              <span class="text">{{t('contentContainer.download')}}</span>
             </a>
             <div class="apiBlock">
-              <span class="title">{{t('contentContainer.try', {}, {locale: locale})}}</span>
+              <span class="title">{{t('contentContainer.try')}}</span>
               <div class="codeBlock">
                 <div class="headBlock">
-                  <span>{{t('contentContainer.title', {}, {locale: locale})}}</span>
+                  <span>{{t('contentContainer.title')}}</span>
                 </div>
                 <div class="contentBlock">
 <!--                  <p>&lt;<span class="tag">div</span> <span-->

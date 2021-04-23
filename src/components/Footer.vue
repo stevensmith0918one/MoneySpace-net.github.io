@@ -4,44 +4,44 @@
             <div class="wrapper">
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">{{t('footer.productArea.title', {}, {locale: locale})}}</span>
+                        <span class="title">{{t('footer.productArea.title')}}</span>
                         <ul>
-                            <li><a href="#">{{t('footer.productArea.products[0]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.productArea.products[1]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.productArea.products[0]')}}</a></li>
+                            <li><a href="#">{{t('footer.productArea.products[1]')}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">{{t('footer.featureArea.title', {}, {locale: locale})}}</span>
+                        <span class="title">{{t('footer.featureArea.title')}}</span>
                         <ul>
-                            <li><a href="#">{{t('footer.featureArea.features[0]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.featureArea.features[1]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.featureArea.features[2]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.featureArea.features[3]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.featureArea.features[4]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[0]')}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[1]')}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[2]')}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[3]')}}</a></li>
+                            <li><a href="#">{{t('footer.featureArea.features[4]')}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">{{t('footer.moneySpaceArea.title', {}, {locale: locale})}}</span>
+                        <span class="title">{{t('footer.moneySpaceArea.title')}}</span>
                         <ul>
-                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[0]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[1]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[2]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[3]', {}, {locale: locale})}}</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[0]')}}</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[1]')}}</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[2]')}}</a></li>
+                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[3]')}}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col">
                     <div class="footMenu">
-                        <span class="title">{{t('footer.faqArea.title', {}, {locale: locale})}}</span>
+                        <span class="title">{{t('footer.faqArea.title')}}</span>
                         <ul>
-                            <li><a href="/#/businesses">{{t('footer.faqArea.faqs[0]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.faqArea.faqs[1]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.faqArea.faqs[2]', {}, {locale: locale})}}</a></li>
-                            <li><a href="#">{{t('footer.faqArea.faqs[3]', {}, {locale: locale})}}</a></li>
+                            <li><a href="/#/businesses">{{t('footer.faqArea.faqs[0]')}}</a></li>
+                            <li><a href="#">{{t('footer.faqArea.faqs[1]')}}</a></li>
+                            <li><a href="#">{{t('footer.faqArea.faqs[2]')}}</a></li>
+                            <li><a href="#">{{t('footer.faqArea.faqs[3]')}}</a></li>
                         </ul>
                     </div>
                 </div>

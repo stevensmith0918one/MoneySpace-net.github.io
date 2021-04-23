@@ -5,7 +5,7 @@
         <div class="logoWrapper">
           <div class="siteLogo">
             <img src="@/assets/img/logo.png" alt="logo">
-            <span>{{t('header.logo', {}, {locale: locale})}}</span>
+            <span>{{t('header.logo')}}</span>
             <a href="#/">main</a>
           </div>
         </div>
@@ -15,9 +15,9 @@
             <span class="menuTitleSm">Menu</span>
             <nav>
               <ul class="menuList">
-                <li><a href="#/payment">{{t('header.nav.payment', {}, {locale: locale})}}</a></li>
-                <li><a href="#/pricing">{{t('header.nav.pricing', {}, {locale: locale})}}</a></li>
-                <li><a href="#/contact-us">{{t('header.nav.contact-us', {}, {locale: locale})}}</a></li>
+                <li><a href="#/payment">{{t('header.nav.payment')}}</a></li>
+                <li><a href="#/pricing">{{t('header.nav.pricing')}}</a></li>
+                <li><a href="#/contact-us">{{t('header.nav.contact-us')}}</a></li>
               </ul>
             </nav>
           </div>
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btnFillType1">{{t('header.signup', {}, {locale: locale})}}</a>
+        <a href="#" class="btnFillType1">{{t('header.signup')}}</a>
         <a href="#" class="siteLink loginSm">Sign Up</a>
         <div class="openMenuBtn">
           <span></span>

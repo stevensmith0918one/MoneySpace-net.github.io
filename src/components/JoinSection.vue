@@ -6,15 +6,15 @@
                     <img src="@/assets/img/image_1.jpg" alt="image">
                 </div>
                 <div class="info">
-                    <span class="title lg">{{t('joinSection.title', {}, {locale: locale})}}</span>
+                    <span class="title lg">{{t('joinSection.title')}}</span>
                     <div class="content">
                         <div class="textBlock">
-                            <p>{{t('joinSection.content', {}, {locale: locale})}}</p>
+                            <p>{{t('joinSection.content')}}</p>
                         </div>
                     </div>
                     <a href="#" class="btnIconType1 sm">
                         <span class="in">
-                            <span class="text">{{t('joinSection.start', {}, {locale: locale})}}</span>
+                            <span class="text">{{t('joinSection.start')}}</span>
                             <span class="icon-arrow"></span>
                         </span>
                     </a>

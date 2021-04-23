@@ -3,30 +3,30 @@
         <div class="container">
             <div class="wrapper">
                 <div class="titleContainer">
-                    <span class="sectionTitle md">{{t('mainInfo.title', {}, {locale: locale})}}</span>
+                    <span class="sectionTitle md">{{t('mainInfo.title')}}</span>
                 </div>
                 <div class="contentContainer">
                     <div class="infoBlock">
                         <div class="item">
                             <div class="textBlock lg">
-                                <p>{{t('mainInfo.content.item1.value', {}, {locale: locale})}}</p>
+                                <p>{{t('mainInfo.content.item1.value')}}</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="textBlock lg">
-                                <span class="title">{{t('mainInfo.content.item2.label', {}, {locale: locale})}}</span>
-                                <p>{{t('mainInfo.content.item2.value', {}, {locale: locale})}}</p>
+                                <span class="title">{{t('mainInfo.content.item2.label')}}</span>
+                                <p>{{t('mainInfo.content.item2.value')}}</p>
                             </div>
                         </div>
                     </div>
                     <ul class="securityList">
                         <li>
                             <img src="@/assets/img/security_1.png" alt="secutity">
-                            <span>{{t('mainInfo.security1', {}, {locale: locale})}}</span>
+                            <span>{{t('mainInfo.security1')}}</span>
                         </li>
                         <li>
                             <img src="@/assets/img/security_2.png" alt="secutity">
-                            <span>{{t('mainInfo.security2', {}, {locale: locale})}}</span>
+                            <span>{{t('mainInfo.security2')}}</span>
                         </li>
                     </ul>
                 </div>
@@ -35,14 +35,14 @@
         <div  :class="{ apiImg: isActive(), animatedBlock: isActive(), visible: isActive(), nonVisible: !isActive() }">
             <div class="circleWrap">
                 <div class="circle animated">
-                    <span class="text animated">{{t('mainInfo.animation.website', {}, {locale: locale})}}</span>
+                    <span class="text animated">{{t('mainInfo.animation.website')}}</span>
                 </div>
                 <div class="circle animated">
-                    <span class="text animated">{{t('mainInfo.animation.payment', {}, {locale: locale})}}</span>
+                    <span class="text animated">{{t('mainInfo.animation.payment')}}</span>
                 </div>
             </div>
             <div class="overlay animated"></div>
-            <span class="text animated">{{t('mainInfo.animation.api', {}, {locale: locale})}}</span>
+            <span class="text animated">{{t('mainInfo.animation.api')}}</span>
             <img src="@/assets/img/check.svg" alt="check" class="icon animated">
         </div>
     </div>

@@ -6,26 +6,26 @@
           <div class="businessBlock">
             <div class="wrapper">
               <div class="titleBlock">
-                <span class="title">{{t('businessSection.subtitle', {}, {locale: locale})}}</span>
-                <span class="subtitle">{{t('businessSection.title', {}, {locale: locale})}}</span>
+                <span class="title">{{t('businessSection.subtitle')}}</span>
+                <span class="subtitle">{{t('businessSection.title')}}</span>
               </div>
               <div class="contentBlock">
                 <ul class="listTempl1">
                   <li>
-                    <span class="num">{{t('businessSection.contentBlock[0].id', {}, {locale: locale})}}</span>
-                    {{t('businessSection.contentBlock[0].value', {}, {locale: locale})}}
+                    <span class="num">{{t('businessSection.contentBlock[0].id')}}</span>
+                    {{t('businessSection.contentBlock[0].value')}}
                   </li>
                   <li>
-                    <span class="num">{{t('businessSection.contentBlock[1].id', {}, {locale: locale})}}</span>
-                    {{t('businessSection.contentBlock[1].value', {}, {locale: locale})}}
+                    <span class="num">{{t('businessSection.contentBlock[1].id')}}</span>
+                    {{t('businessSection.contentBlock[1].value')}}
                   </li>
                   <li>
-                    <span class="num">{{t('businessSection.contentBlock[2].id', {}, {locale: locale})}}</span>
-                    {{t('businessSection.contentBlock[2].value', {}, {locale: locale})}}
+                    <span class="num">{{t('businessSection.contentBlock[2].id')}}</span>
+                    {{t('businessSection.contentBlock[2].value')}}
                   </li>
                   <li>
-                    <span class="num">{{t('businessSection.contentBlock[3].id', {}, {locale: locale})}}</span>
-                    {{t('businessSection.contentBlock[3].value', {}, {locale: locale})}}
+                    <span class="num">{{t('businessSection.contentBlock[3].id')}}</span>
+                    {{t('businessSection.contentBlock[3].value')}}
                   </li>
                 </ul>
               </div>

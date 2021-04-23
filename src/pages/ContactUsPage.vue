@@ -6,25 +6,25 @@
         <div class="wrapper">
           <div class="left">
             <div class="titleContainer">
-              <span class="pageTitle">{{t('pageTitle', {}, {locale: locale})}}</span>
-              <span class="pageSubtitle">{{t('pageSubtitle', {}, {locale: locale})}}</span>
+              <span class="pageTitle">{{t('pageTitle')}}</span>
+              <span class="pageSubtitle">{{t('pageSubtitle')}}</span>
             </div>
             <div class="contentContainer">
               <div class="timingBlock">
-                <span class="title">{{t('title', {}, {locale: locale})}}</span>
-                <span class="data">{{t('data', {}, {locale: locale})}}</span>
+                <span class="title">{{t('title')}}</span>
+                <span class="data">{{t('data')}}</span>
               </div>
               <ul class="contactsList">
                 <li>
                   <a href="mailto:th@moneyspace.net">
                     <img src="@/assets/img/mail.svg" alt="mail" class="icon">
-                    <span class="data">{{t('contactsList[0]', {}, {locale: locale})}}</span>
+                    <span class="data">{{t('contactsList[0]')}}</span>
                   </a>
                 </li>
                 <li>
                   <a href="tel:021070364 ">
                     <img src="@/assets/img/phone.svg" alt="phone" class="icon">
-                    <span class="data">{{t('contactsList[1]', {}, {locale: locale})}}</span>
+                    <span class="data">{{t('contactsList[1]')}}</span>
                   </a>
                 </li>
               </ul>
@@ -41,10 +41,10 @@
               <div class="locationBlock">
                 <div class="title">
                   <img src="@/assets/img/location.svg" alt="location" class="icon">
-                  <span class="data">{{t('locationBlock.title', {}, {locale: locale})}}</span>
+                  <span class="data">{{t('locationBlock.title')}}</span>
                 </div>
                 <div class="content">
-                  <p>{{t('locationBlock.content', {}, {locale: locale})}}</p>
+                  <p>{{t('locationBlock.content')}}</p>
                 </div>
               </div>
             </div>

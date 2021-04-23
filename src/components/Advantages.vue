@@ -8,8 +8,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_1.svg" alt="advantage">
                             </div>
-                            <span class="title">{{t('advantages.item1.title1', {}, {locale: locale})}}<br>{{t('advantages.item1.title2', {}, {locale: locale})}}</span>
-                            <p>{{t('advantages.item1.content', {}, {locale: locale})}}</p>
+                            <span class="title">{{t('advantages.item1.title1')}}<br>{{t('advantages.item1.title2')}}</span>
+                            <p>{{t('advantages.item1.content')}}</p>
                         </div>
                     </div>
                     <div class="item">
@@ -17,8 +17,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_2.svg" alt="advantage">
                             </div>
-                            <span class="title">{{t('advantages.item2.title1', {}, {locale: locale})}}<br>{{t('advantages.item2.title2', {}, {locale: locale})}}</span>
-                            <p>{{t('advantages.item2.content', {}, {locale: locale})}}</p>
+                            <span class="title">{{t('advantages.item2.title1')}}<br>{{t('advantages.item2.title2')}}</span>
+                            <p>{{t('advantages.item2.content')}}</p>
                         </div>
                     </div>
                     <div class="item">
@@ -26,8 +26,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_3.svg" alt="advantage">
                             </div>
-                            <span class="title">{{t('advantages.item3.title1', {}, {locale: locale})}}<br>{{t('advantages.item3.title2', {}, {locale: locale})}}</span>
-                            <p>{{t('advantages.item3.content', {}, {locale: locale})}}</p>
+                            <span class="title">{{t('advantages.item3.title1')}}<br>{{t('advantages.item3.title2')}}</span>
+                            <p>{{t('advantages.item3.content')}}</p>
                         </div>
                     </div>
                     <div class="item">
@@ -35,8 +35,8 @@
                             <div class="img">
                                 <img src="@/assets/img/advantage_4.svg" alt="advantage">
                             </div>
-                            <span class="title">{{t('advantages.item4.title1', {}, {locale: locale})}}<br>{{t('advantages.item4.title2', {}, {locale: locale})}}</span>
-                            <p>{{t('advantages.item4.content', {}, {locale: locale})}}</p>
+                            <span class="title">{{t('advantages.item4.title1')}}<br>{{t('advantages.item4.title2')}}</span>
+                            <p>{{t('advantages.item4.content')}}</p>
                         </div>
                     </div>
                 </div>
