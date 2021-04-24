@@ -106,7 +106,7 @@
                               <div class="inWrap">
                                 <input type="text" class="terms" name="buyerTerms"
                                        id="buyerTerms"
-                                       value="{{t('linksPage.linkSectionBuy.left.fieldsWrap.placeHolder')}}"
+                                       :value="t('linksPage.linkSectionBuy.left.fieldsWrap.placeHolder')"
                                        readonly>
                               </div>
                             </div>
@@ -199,7 +199,7 @@
                               <label for="name">{{t('linksPage.linkSectionMerch.right.items[0].label')}}</label>
                               <div class="inWrap">
                                 <input type="text" name="name" id="name"
-                                       value="{{t('linksPage.linkSectionMerch.right.items[0].placeholder')}}">
+                                       :value="t('linksPage.linkSectionMerch.right.items[0].placeholder')">
                               </div>
                             </div>
                           </div>
@@ -207,7 +207,7 @@
                             <div class="inBlockType1">
                               <label for="sum">{{t('linksPage.linkSectionMerch.right.items[1].label')}}</label>
                               <div class="inWrap">
-                                <input type="text" name="sum" id="sum" value="{{t('linksPage.linkSectionMerch.right.items[1].placeholder')}}">
+                                <input type="text" name="sum" id="sum" :value="t('linksPage.linkSectionMerch.right.items[1].placeholder')">
                               </div>
                             </div>
                           </div>
@@ -256,7 +256,7 @@
                               <div class="inWrap">
                                 <input type="text" class="terms" name="buyerTerms"
                                        id="buyerTerms"
-                                       value="{{t('linksPage.linkSectionMerch.right.fieldsWrap.placeHolder')}}"
+                                       :value="t('linksPage.linkSectionMerch.right.fieldsWrap.placeHolder')"
                                        readonly>
                               </div>
                             </div>
