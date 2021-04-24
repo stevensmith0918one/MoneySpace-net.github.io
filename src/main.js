@@ -9,6 +9,7 @@ import PricingPage from "./pages/PricingPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import PaymentPage from "./pages/PaymentPage";
 import BusinessPage from "./pages/BusinessesPage";
+import LinksPage from "./pages/LinksPage";
 
 const routes = [
     {
@@ -30,6 +31,10 @@ const routes = [
     {
         path: '/businesses',
         component: BusinessPage
+    },
+    {
+        path: '/links',
+        component: LinksPage
     },
     {
         path :'/*',

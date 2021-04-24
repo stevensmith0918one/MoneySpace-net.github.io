@@ -9,11 +9,13 @@ import pricingEn from "./translations/pricingEn.json";
 import pricingTh from "./translations/pricingTh.json";
 import businessEn from "./translations/businessEn.json";
 import businessTh from "./translations/businessTh.json";
+import linksEn from "./translations/linksEn.json";
+import linksTh from "./translations/linksTh.json";
 
 const i18n = createI18n({
     messages: {
-        en: Object.assign({}, homeEn, contactUsEn, paymentLinkEn, pricingEn, businessEn),
-        th: Object.assign({}, homeTh, contactUsTh, paymentLinkTh, pricingTh, businessTh)
+        en: Object.assign({}, homeEn, contactUsEn, paymentLinkEn, pricingEn, businessEn, linksEn),
+        th: Object.assign({}, homeTh, contactUsTh, paymentLinkTh, pricingTh, businessTh, linksTh)
     },
     fallbackLocale: localStorage.getItem('locale') || 'th',
     locale: localStorage.getItem('locale') || 'th'

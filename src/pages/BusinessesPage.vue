@@ -45,7 +45,7 @@ import {useI18n} from "vue-i18n";
 
 export default {
   components: {Header, Footer },
-  name: 'PricingPage',
+  name: 'BusinessPage',
   setup() {
     const {t, locale} = useI18n();
     return {t, locale}

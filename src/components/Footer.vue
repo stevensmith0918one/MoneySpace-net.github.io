@@ -27,7 +27,7 @@
                     <div class="footMenu">
                         <span class="title">{{t('footer.moneySpaceArea.title')}}</span>
                         <ul>
-                            <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[0]')}}</a></li>
+                            <li><a href="/#/links">{{t('footer.moneySpaceArea.moneySpaces[0]')}}</a></li>
                             <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[1]')}}</a></li>
                             <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[2]')}}</a></li>
                             <li><a href="#">{{t('footer.moneySpaceArea.moneySpaces[3]')}}</a></li>

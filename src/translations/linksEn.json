@@ -1,0 +1,125 @@
+{
+  "linksPage": {
+    "info": "Payment Links",
+    "title": "Your merchant can accept an online credit card payment from your customer even if your merchant does not have a website for selling products/services. This payment can be made as we will create a payment link and will send it directly to your customers through various global social media channels.",
+    "steps": [
+      {
+        "id": "1",
+        "content": "A payment link request is sent to MoneySpace and a link is created"
+      },
+      {
+        "id": "2",
+        "content": "Place link on your social media platforms or blogs"
+      },
+      {
+        "id": "3",
+        "content": "Your customer opens the link to complete payment"
+      },
+      {
+        "id": "4",
+        "content": "You receive instant notificaton when payment is done"
+      }
+    ],
+    "linkSectionBuy": {
+      "left": {
+        "title": "Paid link for buyer to fill in.",
+        "subtitle": "You can copy this link to your buyers.",
+        "radioWrap": {
+          "label": "Who is responsible for fee:",
+          "radioList": {
+            "seller": "Seller",
+            "buyer": "Buyer"
+          }
+        },
+        "fieldsWrap": {
+          "label1": "Terms & Conditions",
+          "label2": "I acknowledge that I will NOT claim the refund or cancel the order.",
+          "placeHolder": "I acknowledge that I will NOT claim the refund or cancel the order.",
+          "buyerLink": "MPay Link",
+          "print": "Print",
+          "copyLink": "Copy Link"
+        }
+      },
+      "right": {
+        "subtitle": "Most flexible",
+        "title": "Buyer fill in",
+        "textBlock": "payment link that a payer can fill in price and product’s detail by themselves. (After the payment is done. Both merchant and payer will got e-mail notification)",
+        "items": [
+          {
+            "cap": "Benefits",
+            "content": "Merchant don’t need to handle about this payment link much , a payer will fill in by themselves"
+          },
+          {
+            "cap": "Restriction",
+            "content": "If a payer fill in wrongly, or forgot some transportation expense or some extra plans to pay. Will cause more merchant’s back-end system."
+          }
+        ]
+      }
+    },
+    "linkSectionMerch": {
+      "left": {
+        "subtitle": "Most precise",
+        "title": "Merchant Link",
+        "textBlock": "Online merchants will fill in product’s detail and price and picture to confirm payer’s need. (After the payment is done. Both merchant and payer will got e-mail notification)",
+        "items": [
+          {
+            "cap": "Benefits",
+            "content1": "A payer just only double check the product’s detail before making a payment.",
+            "content2": "A payment link can be counted as per success payment. This can help the stock of products."
+          },
+          {
+            "cap": "Restriction",
+            "content": "A payment link can be used for individual payer only."
+          }
+        ]
+      },
+      "right": {
+        "title": "Get paid shop details",
+        "subtitle": "You can set details and send links to your customers.",
+        "items": [
+          {
+            "label": "Prouduct / Service Name:",
+            "placeholder": "iPhone 8 / 32gb"
+          },
+          {
+            "label": "Amount ( ฿ )",
+            "placeholder": "25,000"
+          }
+        ],
+        "checkList": [
+          {
+            "label": "Credit / Debit Card"
+          },
+          {
+            "label": "Installment payment plan"
+          }
+        ],
+        "radioWrap": {
+          "label": "Responsible free person",
+          "radioList": [
+            {
+              "label": "Seller"
+            },
+            {
+              "label": "Buyer"
+            }
+          ]
+        },
+        "fieldsWrap": {
+          "label1": "Terms & Conditions",
+          "label2": "I acknowledge that I will NOT claim the refund or cancel the order.",
+          "placeHolder": "I acknowledge that I will NOT claim the refund or cancel the order."
+        },
+        "more": {
+          "link": "More Details",
+          "buttonValue": "Create Payment Link"
+        }
+      }
+    },
+    "joinSection": {
+      "info": "No monthly fee No set up / integration No sale maintenance",
+      "textBlock": "Start accepting payments with Money Space",
+      "link": "Start Now"
+    }
+  }
+}
